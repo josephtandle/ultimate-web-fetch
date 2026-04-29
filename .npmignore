@@ -1,0 +1,9 @@
+.env
+.env.*
+data/
+downloads/
+node_modules/
+playwright-report/
+test-results/
+.git/
+.github/

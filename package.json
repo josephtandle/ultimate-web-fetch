@@ -1,0 +1,41 @@
+{
+  "name": "ultimate-web-fetch",
+  "version": "1.0.0",
+  "description": "Unified web fetching, scraping, screenshot, PDF, extraction, and authorized media download CLI.",
+  "main": "src/index.js",
+  "bin": {
+    "ultimate-web-fetch": "src/index.js",
+    "webfetch": "src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "preflight": "node src/index.js preflight",
+    "status": "node src/index.js status",
+    "check": "node --check src/index.js && node --check src/api.js && find src/tools -name '*.js' -print0 | xargs -0 -n1 node --check"
+  },
+  "files": [
+    "README.md",
+    "LICENSE",
+    "SECURITY.md",
+    "src/",
+    "config/",
+    "package.json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josephtandle/ultimate-web-fetch.git"
+  },
+  "bugs": {
+    "url": "https://github.com/josephtandle/ultimate-web-fetch/issues"
+  },
+  "homepage": "https://github.com/josephtandle/ultimate-web-fetch#readme",
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "playwright": "^1.59.0",
+    "turndown": "^7.2.0"
+  }
+}
