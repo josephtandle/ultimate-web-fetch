@@ -6,6 +6,8 @@ const { URL } = require('url');
 
 const ADAPTERS_FILE = path.join(__dirname, '..', 'config', 'opencli-adapters.json');
 const STALE_DAYS = 7;
+const PREFERRED_COMMAND_NAMES = new Set(['read', 'article', 'product', 'item', 'video', 'detail', 'content', 'summary', 'news', 'offer']);
+const SECONDARY_COMMAND_NAMES = new Set(['comments', 'comment', 'like', 'unlike', 'download', 'assets', 'subscribe', 'unsubscribe']);
 
 // STATIC signals — page content doesn't need JS to be present
 const STATIC_GOAL = /\b(extract|scrape|read|get\s+text|get\s+content|parse|fetch\s+data|download\s+page)\b/i;
@@ -28,11 +30,23 @@ function getOpenCLIAdapter(domain) {
   try {
     const data = JSON.parse(fs.readFileSync(ADAPTERS_FILE, 'utf8'));
     const stale = !data.lastUpdated || (Date.now() - new Date(data.lastUpdated).getTime()) > STALE_DAYS * 24 * 60 * 60 * 1000;
-    const match = (data.adapters || []).find(a => domain.includes(a.site) || a.site.includes(domain));
+    const match = (data.adapters || []).filter(a => {
+      if (!a.acceptsUrl || a.command === 'web/read') return false;
+      if (a.domain && (domain === a.domain || domain.endsWith(`.${a.domain}`))) return true;
+      return a.site && domain.includes(a.site);
+    }).sort((a, b) => adapterPriority(a) - adapterPriority(b))[0];
     return { adapter: match?.adapter || null, stale };
   } catch {
     return { adapter: null, stale: true };
   }
+}
+
+function adapterPriority(adapter) {
+  const name = adapter.name || adapter.command?.split('/').pop() || '';
+  if (PREFERRED_COMMAND_NAMES.has(name)) return 0;
+  if (!adapter.browser) return 20;
+  if (SECONDARY_COMMAND_NAMES.has(name)) return 80;
+  return 50;
 }
 
 function scoreStatic(url, goal) {
@@ -108,7 +122,7 @@ function explainChoice(url, goal, { installed = {}, forcedTool } = {}) {
 
   if (installed.opencli) {
     const { adapter } = getOpenCLIAdapter(domain);
-    if (adapter) return `OpenCLI adapter '${adapter}' found for ${domain} — deterministic, zero runtime tokens`;
+    if (adapter) return `OpenCLI adapter '${adapter.command}' found for ${domain} — deterministic, zero runtime tokens`;
   }
 
   if (isAutonomous(goal) && installed.browserUse) {

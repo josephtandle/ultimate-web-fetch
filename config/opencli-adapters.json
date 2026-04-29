@@ -1,4 +1,7670 @@
 {
-  "lastUpdated": null,
-  "adapters": []
+  "lastUpdated": "2026-04-29T07:16:16.973Z",
+  "adapters": [
+    {
+      "site": "1688",
+      "command": "1688/item",
+      "adapter": {
+        "command": "1688/item",
+        "urlArg": {
+          "name": "input",
+          "positional": true
+        }
+      },
+      "name": "item",
+      "domain": "www.1688.com",
+      "browser": true,
+      "acceptsUrl": true
+    },
+    {
+      "site": "36kr",
+      "command": "36kr/article",
+      "adapter": {
+        "command": "36kr/article",
+        "urlArg": null
+      },
+      "name": "article",
+      "domain": "www.36kr.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "36kr",
+      "command": "36kr/news",
+      "adapter": {
+        "command": "36kr/news",
+        "urlArg": null
+      },
+      "name": "news",
+      "domain": "www.36kr.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "51job",
+      "command": "51job/detail",
+      "adapter": {
+        "command": "51job/detail",
+        "urlArg": null
+      },
+      "name": "detail",
+      "domain": "jobs.51job.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "amazon",
+      "command": "amazon/offer",
+      "adapter": {
+        "command": "amazon/offer",
+        "urlArg": {
+          "name": "input",
+          "positional": true
+        }
+      },
+      "name": "offer",
+      "domain": "amazon.com",
+      "browser": true,
+      "acceptsUrl": true
+    },
+    {
+      "site": "amazon",
+      "command": "amazon/product",
+      "adapter": {
+        "command": "amazon/product",
+        "urlArg": {
+          "name": "input",
+          "positional": true
+        }
+      },
+      "name": "product",
+      "domain": "amazon.com",
+      "browser": true,
+      "acceptsUrl": true
+    },
+    {
+      "site": "antigravity",
+      "command": "antigravity/read",
+      "adapter": {
+        "command": "antigravity/read",
+        "urlArg": null
+      },
+      "name": "read",
+      "domain": "localhost",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "bbc",
+      "command": "bbc/news",
+      "adapter": {
+        "command": "bbc/news",
+        "urlArg": null
+      },
+      "name": "news",
+      "domain": "www.bbc.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "bilibili",
+      "command": "bilibili/video",
+      "adapter": {
+        "command": "bilibili/video",
+        "urlArg": null
+      },
+      "name": "video",
+      "domain": null,
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "bloomberg",
+      "command": "bloomberg/news",
+      "adapter": {
+        "command": "bloomberg/news",
+        "urlArg": {
+          "name": "link",
+          "positional": true
+        }
+      },
+      "name": "news",
+      "domain": "www.bloomberg.com",
+      "browser": true,
+      "acceptsUrl": true
+    },
+    {
+      "site": "boss",
+      "command": "boss/detail",
+      "adapter": {
+        "command": "boss/detail",
+        "urlArg": null
+      },
+      "name": "detail",
+      "domain": "www.zhipin.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "chatgpt-app",
+      "command": "chatgpt-app/read",
+      "adapter": {
+        "command": "chatgpt-app/read",
+        "urlArg": null
+      },
+      "name": "read",
+      "domain": "localhost",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "chatwise",
+      "command": "chatwise/read",
+      "adapter": {
+        "command": "chatwise/read",
+        "urlArg": null
+      },
+      "name": "read",
+      "domain": "localhost",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "codex",
+      "command": "codex/read",
+      "adapter": {
+        "command": "codex/read",
+        "urlArg": null
+      },
+      "name": "read",
+      "domain": "localhost",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "cursor",
+      "command": "cursor/read",
+      "adapter": {
+        "command": "cursor/read",
+        "urlArg": null
+      },
+      "name": "read",
+      "domain": "localhost",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "deepseek",
+      "command": "deepseek/read",
+      "adapter": {
+        "command": "deepseek/read",
+        "urlArg": null
+      },
+      "name": "read",
+      "domain": "chat.deepseek.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "discord-app",
+      "command": "discord-app/read",
+      "adapter": {
+        "command": "discord-app/read",
+        "urlArg": null
+      },
+      "name": "read",
+      "domain": "localhost",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "doubao-app",
+      "command": "doubao-app/read",
+      "adapter": {
+        "command": "doubao-app/read",
+        "urlArg": null
+      },
+      "name": "read",
+      "domain": "doubao-app",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "doubao",
+      "command": "doubao/detail",
+      "adapter": {
+        "command": "doubao/detail",
+        "urlArg": null
+      },
+      "name": "detail",
+      "domain": "www.doubao.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "doubao",
+      "command": "doubao/read",
+      "adapter": {
+        "command": "doubao/read",
+        "urlArg": null
+      },
+      "name": "read",
+      "domain": "www.doubao.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "google",
+      "command": "google/news",
+      "adapter": {
+        "command": "google/news",
+        "urlArg": null
+      },
+      "name": "news",
+      "domain": null,
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "hupu",
+      "command": "hupu/detail",
+      "adapter": {
+        "command": "hupu/detail",
+        "urlArg": null
+      },
+      "name": "detail",
+      "domain": "bbs.hupu.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "jd",
+      "command": "jd/detail",
+      "adapter": {
+        "command": "jd/detail",
+        "urlArg": null
+      },
+      "name": "detail",
+      "domain": "item.jd.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "jd",
+      "command": "jd/item",
+      "adapter": {
+        "command": "jd/item",
+        "urlArg": null
+      },
+      "name": "item",
+      "domain": "item.jd.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "jianyu",
+      "command": "jianyu/detail",
+      "adapter": {
+        "command": "jianyu/detail",
+        "urlArg": {
+          "name": "url",
+          "positional": true
+        }
+      },
+      "name": "detail",
+      "domain": "www.jianyu360.cn",
+      "browser": true,
+      "acceptsUrl": true
+    },
+    {
+      "site": "lesswrong",
+      "command": "lesswrong/read",
+      "adapter": {
+        "command": "lesswrong/read",
+        "urlArg": null
+      },
+      "name": "read",
+      "domain": "www.lesswrong.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "notebooklm",
+      "command": "notebooklm/summary",
+      "adapter": {
+        "command": "notebooklm/summary",
+        "urlArg": null
+      },
+      "name": "summary",
+      "domain": "notebooklm.google.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "notion",
+      "command": "notion/read",
+      "adapter": {
+        "command": "notion/read",
+        "urlArg": null
+      },
+      "name": "read",
+      "domain": "localhost",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "nowcoder",
+      "command": "nowcoder/detail",
+      "adapter": {
+        "command": "nowcoder/detail",
+        "urlArg": null
+      },
+      "name": "detail",
+      "domain": "www.nowcoder.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "pixiv",
+      "command": "pixiv/detail",
+      "adapter": {
+        "command": "pixiv/detail",
+        "urlArg": null
+      },
+      "name": "detail",
+      "domain": "www.pixiv.net",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "reddit",
+      "command": "reddit/read",
+      "adapter": {
+        "command": "reddit/read",
+        "urlArg": null
+      },
+      "name": "read",
+      "domain": "reddit.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "sinablog",
+      "command": "sinablog/article",
+      "adapter": {
+        "command": "sinablog/article",
+        "urlArg": {
+          "name": "url",
+          "positional": true
+        }
+      },
+      "name": "article",
+      "domain": "blog.sina.com.cn",
+      "browser": true,
+      "acceptsUrl": true
+    },
+    {
+      "site": "sinafinance",
+      "command": "sinafinance/news",
+      "adapter": {
+        "command": "sinafinance/news",
+        "urlArg": null
+      },
+      "name": "news",
+      "domain": "app.cj.sina.com.cn",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "taobao",
+      "command": "taobao/detail",
+      "adapter": {
+        "command": "taobao/detail",
+        "urlArg": null
+      },
+      "name": "detail",
+      "domain": "item.taobao.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "tieba",
+      "command": "tieba/read",
+      "adapter": {
+        "command": "tieba/read",
+        "urlArg": null
+      },
+      "name": "read",
+      "domain": "tieba.baidu.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "twitter",
+      "command": "twitter/article",
+      "adapter": {
+        "command": "twitter/article",
+        "urlArg": null
+      },
+      "name": "article",
+      "domain": "x.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "wikipedia",
+      "command": "wikipedia/summary",
+      "adapter": {
+        "command": "wikipedia/summary",
+        "urlArg": null
+      },
+      "name": "summary",
+      "domain": null,
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "xianyu",
+      "command": "xianyu/item",
+      "adapter": {
+        "command": "xianyu/item",
+        "urlArg": null
+      },
+      "name": "item",
+      "domain": "www.goofish.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "xiaoe",
+      "command": "xiaoe/content",
+      "adapter": {
+        "command": "xiaoe/content",
+        "urlArg": {
+          "name": "url",
+          "positional": true
+        }
+      },
+      "name": "content",
+      "domain": "h5.xet.citv.cn",
+      "browser": true,
+      "acceptsUrl": true
+    },
+    {
+      "site": "xiaoe",
+      "command": "xiaoe/detail",
+      "adapter": {
+        "command": "xiaoe/detail",
+        "urlArg": {
+          "name": "url",
+          "positional": true
+        }
+      },
+      "name": "detail",
+      "domain": "h5.xet.citv.cn",
+      "browser": true,
+      "acceptsUrl": true
+    },
+    {
+      "site": "yollomi",
+      "command": "yollomi/video",
+      "adapter": {
+        "command": "yollomi/video",
+        "urlArg": null
+      },
+      "name": "video",
+      "domain": "yollomi.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "youtube",
+      "command": "youtube/video",
+      "adapter": {
+        "command": "youtube/video",
+        "urlArg": {
+          "name": "url",
+          "positional": true
+        }
+      },
+      "name": "video",
+      "domain": "www.youtube.com",
+      "browser": true,
+      "acceptsUrl": true
+    },
+    {
+      "site": "apple-podcasts",
+      "command": "apple-podcasts/episodes",
+      "adapter": {
+        "command": "apple-podcasts/episodes",
+        "urlArg": null
+      },
+      "name": "episodes",
+      "domain": null,
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "apple-podcasts",
+      "command": "apple-podcasts/search",
+      "adapter": {
+        "command": "apple-podcasts/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": null,
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "apple-podcasts",
+      "command": "apple-podcasts/top",
+      "adapter": {
+        "command": "apple-podcasts/top",
+        "urlArg": null
+      },
+      "name": "top",
+      "domain": null,
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "arxiv",
+      "command": "arxiv/paper",
+      "adapter": {
+        "command": "arxiv/paper",
+        "urlArg": null
+      },
+      "name": "paper",
+      "domain": null,
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "arxiv",
+      "command": "arxiv/search",
+      "adapter": {
+        "command": "arxiv/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": null,
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "binance",
+      "command": "binance/asks",
+      "adapter": {
+        "command": "binance/asks",
+        "urlArg": null
+      },
+      "name": "asks",
+      "domain": "data-api.binance.vision",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "binance",
+      "command": "binance/depth",
+      "adapter": {
+        "command": "binance/depth",
+        "urlArg": null
+      },
+      "name": "depth",
+      "domain": "data-api.binance.vision",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "binance",
+      "command": "binance/gainers",
+      "adapter": {
+        "command": "binance/gainers",
+        "urlArg": null
+      },
+      "name": "gainers",
+      "domain": "data-api.binance.vision",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "binance",
+      "command": "binance/klines",
+      "adapter": {
+        "command": "binance/klines",
+        "urlArg": null
+      },
+      "name": "klines",
+      "domain": "data-api.binance.vision",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "binance",
+      "command": "binance/losers",
+      "adapter": {
+        "command": "binance/losers",
+        "urlArg": null
+      },
+      "name": "losers",
+      "domain": "data-api.binance.vision",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "binance",
+      "command": "binance/pairs",
+      "adapter": {
+        "command": "binance/pairs",
+        "urlArg": null
+      },
+      "name": "pairs",
+      "domain": "data-api.binance.vision",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "binance",
+      "command": "binance/price",
+      "adapter": {
+        "command": "binance/price",
+        "urlArg": null
+      },
+      "name": "price",
+      "domain": "data-api.binance.vision",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "binance",
+      "command": "binance/prices",
+      "adapter": {
+        "command": "binance/prices",
+        "urlArg": null
+      },
+      "name": "prices",
+      "domain": "data-api.binance.vision",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "binance",
+      "command": "binance/ticker",
+      "adapter": {
+        "command": "binance/ticker",
+        "urlArg": null
+      },
+      "name": "ticker",
+      "domain": "data-api.binance.vision",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "binance",
+      "command": "binance/top",
+      "adapter": {
+        "command": "binance/top",
+        "urlArg": null
+      },
+      "name": "top",
+      "domain": "data-api.binance.vision",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "binance",
+      "command": "binance/trades",
+      "adapter": {
+        "command": "binance/trades",
+        "urlArg": null
+      },
+      "name": "trades",
+      "domain": "data-api.binance.vision",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "bloomberg",
+      "command": "bloomberg/businessweek",
+      "adapter": {
+        "command": "bloomberg/businessweek",
+        "urlArg": null
+      },
+      "name": "businessweek",
+      "domain": "feeds.bloomberg.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "bloomberg",
+      "command": "bloomberg/economics",
+      "adapter": {
+        "command": "bloomberg/economics",
+        "urlArg": null
+      },
+      "name": "economics",
+      "domain": "feeds.bloomberg.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "bloomberg",
+      "command": "bloomberg/feeds",
+      "adapter": {
+        "command": "bloomberg/feeds",
+        "urlArg": null
+      },
+      "name": "feeds",
+      "domain": "feeds.bloomberg.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "bloomberg",
+      "command": "bloomberg/industries",
+      "adapter": {
+        "command": "bloomberg/industries",
+        "urlArg": null
+      },
+      "name": "industries",
+      "domain": "feeds.bloomberg.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "bloomberg",
+      "command": "bloomberg/main",
+      "adapter": {
+        "command": "bloomberg/main",
+        "urlArg": null
+      },
+      "name": "main",
+      "domain": "feeds.bloomberg.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "bloomberg",
+      "command": "bloomberg/markets",
+      "adapter": {
+        "command": "bloomberg/markets",
+        "urlArg": null
+      },
+      "name": "markets",
+      "domain": "feeds.bloomberg.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "bloomberg",
+      "command": "bloomberg/opinions",
+      "adapter": {
+        "command": "bloomberg/opinions",
+        "urlArg": null
+      },
+      "name": "opinions",
+      "domain": "feeds.bloomberg.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "bloomberg",
+      "command": "bloomberg/politics",
+      "adapter": {
+        "command": "bloomberg/politics",
+        "urlArg": null
+      },
+      "name": "politics",
+      "domain": "feeds.bloomberg.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "bloomberg",
+      "command": "bloomberg/tech",
+      "adapter": {
+        "command": "bloomberg/tech",
+        "urlArg": null
+      },
+      "name": "tech",
+      "domain": "feeds.bloomberg.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "bluesky",
+      "command": "bluesky/feeds",
+      "adapter": {
+        "command": "bluesky/feeds",
+        "urlArg": null
+      },
+      "name": "feeds",
+      "domain": "public.api.bsky.app",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "bluesky",
+      "command": "bluesky/followers",
+      "adapter": {
+        "command": "bluesky/followers",
+        "urlArg": null
+      },
+      "name": "followers",
+      "domain": "public.api.bsky.app",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "bluesky",
+      "command": "bluesky/following",
+      "adapter": {
+        "command": "bluesky/following",
+        "urlArg": null
+      },
+      "name": "following",
+      "domain": "public.api.bsky.app",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "bluesky",
+      "command": "bluesky/profile",
+      "adapter": {
+        "command": "bluesky/profile",
+        "urlArg": null
+      },
+      "name": "profile",
+      "domain": "public.api.bsky.app",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "bluesky",
+      "command": "bluesky/search",
+      "adapter": {
+        "command": "bluesky/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": "public.api.bsky.app",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "bluesky",
+      "command": "bluesky/starter-packs",
+      "adapter": {
+        "command": "bluesky/starter-packs",
+        "urlArg": null
+      },
+      "name": "starter-packs",
+      "domain": "public.api.bsky.app",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "bluesky",
+      "command": "bluesky/thread",
+      "adapter": {
+        "command": "bluesky/thread",
+        "urlArg": null
+      },
+      "name": "thread",
+      "domain": "public.api.bsky.app",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "bluesky",
+      "command": "bluesky/trending",
+      "adapter": {
+        "command": "bluesky/trending",
+        "urlArg": null
+      },
+      "name": "trending",
+      "domain": "public.api.bsky.app",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "bluesky",
+      "command": "bluesky/user",
+      "adapter": {
+        "command": "bluesky/user",
+        "urlArg": null
+      },
+      "name": "user",
+      "domain": "public.api.bsky.app",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "chatgpt-app",
+      "command": "chatgpt-app/ask",
+      "adapter": {
+        "command": "chatgpt-app/ask",
+        "urlArg": null
+      },
+      "name": "ask",
+      "domain": "localhost",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "chatgpt-app",
+      "command": "chatgpt-app/model",
+      "adapter": {
+        "command": "chatgpt-app/model",
+        "urlArg": null
+      },
+      "name": "model",
+      "domain": "localhost",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "chatgpt-app",
+      "command": "chatgpt-app/new",
+      "adapter": {
+        "command": "chatgpt-app/new",
+        "urlArg": null
+      },
+      "name": "new",
+      "domain": "localhost",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "chatgpt-app",
+      "command": "chatgpt-app/send",
+      "adapter": {
+        "command": "chatgpt-app/send",
+        "urlArg": null
+      },
+      "name": "send",
+      "domain": "localhost",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "chatgpt-app",
+      "command": "chatgpt-app/status",
+      "adapter": {
+        "command": "chatgpt-app/status",
+        "urlArg": null
+      },
+      "name": "status",
+      "domain": "localhost",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "ctrip",
+      "command": "ctrip/search",
+      "adapter": {
+        "command": "ctrip/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": null,
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "devto",
+      "command": "devto/tag",
+      "adapter": {
+        "command": "devto/tag",
+        "urlArg": null
+      },
+      "name": "tag",
+      "domain": "dev.to",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "devto",
+      "command": "devto/top",
+      "adapter": {
+        "command": "devto/top",
+        "urlArg": null
+      },
+      "name": "top",
+      "domain": "dev.to",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "devto",
+      "command": "devto/user",
+      "adapter": {
+        "command": "devto/user",
+        "urlArg": null
+      },
+      "name": "user",
+      "domain": "dev.to",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "dictionary",
+      "command": "dictionary/examples",
+      "adapter": {
+        "command": "dictionary/examples",
+        "urlArg": null
+      },
+      "name": "examples",
+      "domain": "api.dictionaryapi.dev",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "dictionary",
+      "command": "dictionary/search",
+      "adapter": {
+        "command": "dictionary/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": "api.dictionaryapi.dev",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "dictionary",
+      "command": "dictionary/synonyms",
+      "adapter": {
+        "command": "dictionary/synonyms",
+        "urlArg": null
+      },
+      "name": "synonyms",
+      "domain": "api.dictionaryapi.dev",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "eastmoney",
+      "command": "eastmoney/announcement",
+      "adapter": {
+        "command": "eastmoney/announcement",
+        "urlArg": null
+      },
+      "name": "announcement",
+      "domain": "np-anotice-stock.eastmoney.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "eastmoney",
+      "command": "eastmoney/convertible",
+      "adapter": {
+        "command": "eastmoney/convertible",
+        "urlArg": null
+      },
+      "name": "convertible",
+      "domain": "push2.eastmoney.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "eastmoney",
+      "command": "eastmoney/etf",
+      "adapter": {
+        "command": "eastmoney/etf",
+        "urlArg": null
+      },
+      "name": "etf",
+      "domain": "push2.eastmoney.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "eastmoney",
+      "command": "eastmoney/holders",
+      "adapter": {
+        "command": "eastmoney/holders",
+        "urlArg": null
+      },
+      "name": "holders",
+      "domain": "datacenter-web.eastmoney.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "eastmoney",
+      "command": "eastmoney/index-board",
+      "adapter": {
+        "command": "eastmoney/index-board",
+        "urlArg": null
+      },
+      "name": "index-board",
+      "domain": "push2.eastmoney.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "eastmoney",
+      "command": "eastmoney/kline",
+      "adapter": {
+        "command": "eastmoney/kline",
+        "urlArg": null
+      },
+      "name": "kline",
+      "domain": "push2his.eastmoney.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "eastmoney",
+      "command": "eastmoney/kuaixun",
+      "adapter": {
+        "command": "eastmoney/kuaixun",
+        "urlArg": null
+      },
+      "name": "kuaixun",
+      "domain": "np-listapi.eastmoney.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "eastmoney",
+      "command": "eastmoney/longhu",
+      "adapter": {
+        "command": "eastmoney/longhu",
+        "urlArg": null
+      },
+      "name": "longhu",
+      "domain": "datacenter-web.eastmoney.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "eastmoney",
+      "command": "eastmoney/money-flow",
+      "adapter": {
+        "command": "eastmoney/money-flow",
+        "urlArg": null
+      },
+      "name": "money-flow",
+      "domain": "push2.eastmoney.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "eastmoney",
+      "command": "eastmoney/northbound",
+      "adapter": {
+        "command": "eastmoney/northbound",
+        "urlArg": null
+      },
+      "name": "northbound",
+      "domain": "push2.eastmoney.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "eastmoney",
+      "command": "eastmoney/quote",
+      "adapter": {
+        "command": "eastmoney/quote",
+        "urlArg": null
+      },
+      "name": "quote",
+      "domain": "push2.eastmoney.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "eastmoney",
+      "command": "eastmoney/rank",
+      "adapter": {
+        "command": "eastmoney/rank",
+        "urlArg": null
+      },
+      "name": "rank",
+      "domain": "push2.eastmoney.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "eastmoney",
+      "command": "eastmoney/sectors",
+      "adapter": {
+        "command": "eastmoney/sectors",
+        "urlArg": null
+      },
+      "name": "sectors",
+      "domain": "push2.eastmoney.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "google",
+      "command": "google/suggest",
+      "adapter": {
+        "command": "google/suggest",
+        "urlArg": null
+      },
+      "name": "suggest",
+      "domain": null,
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "google",
+      "command": "google/trends",
+      "adapter": {
+        "command": "google/trends",
+        "urlArg": null
+      },
+      "name": "trends",
+      "domain": null,
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "hackernews",
+      "command": "hackernews/ask",
+      "adapter": {
+        "command": "hackernews/ask",
+        "urlArg": null
+      },
+      "name": "ask",
+      "domain": "news.ycombinator.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "hackernews",
+      "command": "hackernews/best",
+      "adapter": {
+        "command": "hackernews/best",
+        "urlArg": null
+      },
+      "name": "best",
+      "domain": "news.ycombinator.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "hackernews",
+      "command": "hackernews/jobs",
+      "adapter": {
+        "command": "hackernews/jobs",
+        "urlArg": null
+      },
+      "name": "jobs",
+      "domain": "news.ycombinator.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "hackernews",
+      "command": "hackernews/new",
+      "adapter": {
+        "command": "hackernews/new",
+        "urlArg": null
+      },
+      "name": "new",
+      "domain": "news.ycombinator.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "hackernews",
+      "command": "hackernews/search",
+      "adapter": {
+        "command": "hackernews/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": "news.ycombinator.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "hackernews",
+      "command": "hackernews/show",
+      "adapter": {
+        "command": "hackernews/show",
+        "urlArg": null
+      },
+      "name": "show",
+      "domain": "news.ycombinator.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "hackernews",
+      "command": "hackernews/top",
+      "adapter": {
+        "command": "hackernews/top",
+        "urlArg": null
+      },
+      "name": "top",
+      "domain": "news.ycombinator.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "hackernews",
+      "command": "hackernews/user",
+      "adapter": {
+        "command": "hackernews/user",
+        "urlArg": null
+      },
+      "name": "user",
+      "domain": "news.ycombinator.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "hf",
+      "command": "hf/top",
+      "adapter": {
+        "command": "hf/top",
+        "urlArg": null
+      },
+      "name": "top",
+      "domain": "huggingface.co",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "lesswrong",
+      "command": "lesswrong/comments",
+      "adapter": {
+        "command": "lesswrong/comments",
+        "urlArg": null
+      },
+      "name": "comments",
+      "domain": "www.lesswrong.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "lesswrong",
+      "command": "lesswrong/curated",
+      "adapter": {
+        "command": "lesswrong/curated",
+        "urlArg": null
+      },
+      "name": "curated",
+      "domain": "www.lesswrong.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "lesswrong",
+      "command": "lesswrong/frontpage",
+      "adapter": {
+        "command": "lesswrong/frontpage",
+        "urlArg": null
+      },
+      "name": "frontpage",
+      "domain": "www.lesswrong.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "lesswrong",
+      "command": "lesswrong/new",
+      "adapter": {
+        "command": "lesswrong/new",
+        "urlArg": null
+      },
+      "name": "new",
+      "domain": "www.lesswrong.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "lesswrong",
+      "command": "lesswrong/sequences",
+      "adapter": {
+        "command": "lesswrong/sequences",
+        "urlArg": null
+      },
+      "name": "sequences",
+      "domain": "www.lesswrong.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "lesswrong",
+      "command": "lesswrong/shortform",
+      "adapter": {
+        "command": "lesswrong/shortform",
+        "urlArg": null
+      },
+      "name": "shortform",
+      "domain": "www.lesswrong.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "lesswrong",
+      "command": "lesswrong/tag",
+      "adapter": {
+        "command": "lesswrong/tag",
+        "urlArg": null
+      },
+      "name": "tag",
+      "domain": "www.lesswrong.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "lesswrong",
+      "command": "lesswrong/tags",
+      "adapter": {
+        "command": "lesswrong/tags",
+        "urlArg": null
+      },
+      "name": "tags",
+      "domain": "www.lesswrong.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "lesswrong",
+      "command": "lesswrong/top",
+      "adapter": {
+        "command": "lesswrong/top",
+        "urlArg": null
+      },
+      "name": "top",
+      "domain": "www.lesswrong.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "lesswrong",
+      "command": "lesswrong/top-month",
+      "adapter": {
+        "command": "lesswrong/top-month",
+        "urlArg": null
+      },
+      "name": "top-month",
+      "domain": "www.lesswrong.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "lesswrong",
+      "command": "lesswrong/top-week",
+      "adapter": {
+        "command": "lesswrong/top-week",
+        "urlArg": null
+      },
+      "name": "top-week",
+      "domain": "www.lesswrong.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "lesswrong",
+      "command": "lesswrong/top-year",
+      "adapter": {
+        "command": "lesswrong/top-year",
+        "urlArg": null
+      },
+      "name": "top-year",
+      "domain": "www.lesswrong.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "lesswrong",
+      "command": "lesswrong/user",
+      "adapter": {
+        "command": "lesswrong/user",
+        "urlArg": null
+      },
+      "name": "user",
+      "domain": "www.lesswrong.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "lesswrong",
+      "command": "lesswrong/user-posts",
+      "adapter": {
+        "command": "lesswrong/user-posts",
+        "urlArg": null
+      },
+      "name": "user-posts",
+      "domain": "www.lesswrong.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "lobsters",
+      "command": "lobsters/active",
+      "adapter": {
+        "command": "lobsters/active",
+        "urlArg": null
+      },
+      "name": "active",
+      "domain": "lobste.rs",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "lobsters",
+      "command": "lobsters/hot",
+      "adapter": {
+        "command": "lobsters/hot",
+        "urlArg": null
+      },
+      "name": "hot",
+      "domain": "lobste.rs",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "lobsters",
+      "command": "lobsters/newest",
+      "adapter": {
+        "command": "lobsters/newest",
+        "urlArg": null
+      },
+      "name": "newest",
+      "domain": "lobste.rs",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "lobsters",
+      "command": "lobsters/tag",
+      "adapter": {
+        "command": "lobsters/tag",
+        "urlArg": null
+      },
+      "name": "tag",
+      "domain": "lobste.rs",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "nowcoder",
+      "command": "nowcoder/companies",
+      "adapter": {
+        "command": "nowcoder/companies",
+        "urlArg": null
+      },
+      "name": "companies",
+      "domain": "www.nowcoder.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "nowcoder",
+      "command": "nowcoder/creators",
+      "adapter": {
+        "command": "nowcoder/creators",
+        "urlArg": null
+      },
+      "name": "creators",
+      "domain": "www.nowcoder.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "nowcoder",
+      "command": "nowcoder/hot",
+      "adapter": {
+        "command": "nowcoder/hot",
+        "urlArg": null
+      },
+      "name": "hot",
+      "domain": "www.nowcoder.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "nowcoder",
+      "command": "nowcoder/jobs",
+      "adapter": {
+        "command": "nowcoder/jobs",
+        "urlArg": null
+      },
+      "name": "jobs",
+      "domain": "www.nowcoder.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "nowcoder",
+      "command": "nowcoder/recommend",
+      "adapter": {
+        "command": "nowcoder/recommend",
+        "urlArg": null
+      },
+      "name": "recommend",
+      "domain": "www.nowcoder.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "nowcoder",
+      "command": "nowcoder/topics",
+      "adapter": {
+        "command": "nowcoder/topics",
+        "urlArg": null
+      },
+      "name": "topics",
+      "domain": "www.nowcoder.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "nowcoder",
+      "command": "nowcoder/trending",
+      "adapter": {
+        "command": "nowcoder/trending",
+        "urlArg": null
+      },
+      "name": "trending",
+      "domain": "www.nowcoder.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "paperreview",
+      "command": "paperreview/feedback",
+      "adapter": {
+        "command": "paperreview/feedback",
+        "urlArg": null
+      },
+      "name": "feedback",
+      "domain": "paperreview.ai",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "paperreview",
+      "command": "paperreview/review",
+      "adapter": {
+        "command": "paperreview/review",
+        "urlArg": null
+      },
+      "name": "review",
+      "domain": "paperreview.ai",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "paperreview",
+      "command": "paperreview/submit",
+      "adapter": {
+        "command": "paperreview/submit",
+        "urlArg": null
+      },
+      "name": "submit",
+      "domain": "paperreview.ai",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "producthunt",
+      "command": "producthunt/posts",
+      "adapter": {
+        "command": "producthunt/posts",
+        "urlArg": null
+      },
+      "name": "posts",
+      "domain": "www.producthunt.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "producthunt",
+      "command": "producthunt/today",
+      "adapter": {
+        "command": "producthunt/today",
+        "urlArg": null
+      },
+      "name": "today",
+      "domain": "www.producthunt.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "sinablog",
+      "command": "sinablog/search",
+      "adapter": {
+        "command": "sinablog/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": "blog.sina.com.cn",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "sinafinance",
+      "command": "sinafinance/stock",
+      "adapter": {
+        "command": "sinafinance/stock",
+        "urlArg": null
+      },
+      "name": "stock",
+      "domain": "suggest3.sinajs.cn,hq.sinajs.cn",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "spotify",
+      "command": "spotify/auth",
+      "adapter": {
+        "command": "spotify/auth",
+        "urlArg": null
+      },
+      "name": "auth",
+      "domain": null,
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "spotify",
+      "command": "spotify/next",
+      "adapter": {
+        "command": "spotify/next",
+        "urlArg": null
+      },
+      "name": "next",
+      "domain": null,
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "spotify",
+      "command": "spotify/pause",
+      "adapter": {
+        "command": "spotify/pause",
+        "urlArg": null
+      },
+      "name": "pause",
+      "domain": null,
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "spotify",
+      "command": "spotify/play",
+      "adapter": {
+        "command": "spotify/play",
+        "urlArg": null
+      },
+      "name": "play",
+      "domain": null,
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "spotify",
+      "command": "spotify/prev",
+      "adapter": {
+        "command": "spotify/prev",
+        "urlArg": null
+      },
+      "name": "prev",
+      "domain": null,
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "spotify",
+      "command": "spotify/queue",
+      "adapter": {
+        "command": "spotify/queue",
+        "urlArg": null
+      },
+      "name": "queue",
+      "domain": null,
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "spotify",
+      "command": "spotify/repeat",
+      "adapter": {
+        "command": "spotify/repeat",
+        "urlArg": null
+      },
+      "name": "repeat",
+      "domain": null,
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "spotify",
+      "command": "spotify/search",
+      "adapter": {
+        "command": "spotify/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": null,
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "spotify",
+      "command": "spotify/shuffle",
+      "adapter": {
+        "command": "spotify/shuffle",
+        "urlArg": null
+      },
+      "name": "shuffle",
+      "domain": null,
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "spotify",
+      "command": "spotify/status",
+      "adapter": {
+        "command": "spotify/status",
+        "urlArg": null
+      },
+      "name": "status",
+      "domain": null,
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "spotify",
+      "command": "spotify/volume",
+      "adapter": {
+        "command": "spotify/volume",
+        "urlArg": null
+      },
+      "name": "volume",
+      "domain": null,
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "stackoverflow",
+      "command": "stackoverflow/bounties",
+      "adapter": {
+        "command": "stackoverflow/bounties",
+        "urlArg": null
+      },
+      "name": "bounties",
+      "domain": "stackoverflow.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "stackoverflow",
+      "command": "stackoverflow/hot",
+      "adapter": {
+        "command": "stackoverflow/hot",
+        "urlArg": null
+      },
+      "name": "hot",
+      "domain": "stackoverflow.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "stackoverflow",
+      "command": "stackoverflow/search",
+      "adapter": {
+        "command": "stackoverflow/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": "stackoverflow.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "stackoverflow",
+      "command": "stackoverflow/unanswered",
+      "adapter": {
+        "command": "stackoverflow/unanswered",
+        "urlArg": null
+      },
+      "name": "unanswered",
+      "domain": "stackoverflow.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "steam",
+      "command": "steam/top-sellers",
+      "adapter": {
+        "command": "steam/top-sellers",
+        "urlArg": null
+      },
+      "name": "top-sellers",
+      "domain": "store.steampowered.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "substack",
+      "command": "substack/search",
+      "adapter": {
+        "command": "substack/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": "substack.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "v2ex",
+      "command": "v2ex/hot",
+      "adapter": {
+        "command": "v2ex/hot",
+        "urlArg": null
+      },
+      "name": "hot",
+      "domain": "www.v2ex.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "v2ex",
+      "command": "v2ex/latest",
+      "adapter": {
+        "command": "v2ex/latest",
+        "urlArg": null
+      },
+      "name": "latest",
+      "domain": "www.v2ex.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "v2ex",
+      "command": "v2ex/member",
+      "adapter": {
+        "command": "v2ex/member",
+        "urlArg": null
+      },
+      "name": "member",
+      "domain": "www.v2ex.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "v2ex",
+      "command": "v2ex/node",
+      "adapter": {
+        "command": "v2ex/node",
+        "urlArg": null
+      },
+      "name": "node",
+      "domain": "www.v2ex.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "v2ex",
+      "command": "v2ex/nodes",
+      "adapter": {
+        "command": "v2ex/nodes",
+        "urlArg": null
+      },
+      "name": "nodes",
+      "domain": "www.v2ex.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "v2ex",
+      "command": "v2ex/replies",
+      "adapter": {
+        "command": "v2ex/replies",
+        "urlArg": null
+      },
+      "name": "replies",
+      "domain": "www.v2ex.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "v2ex",
+      "command": "v2ex/topic",
+      "adapter": {
+        "command": "v2ex/topic",
+        "urlArg": null
+      },
+      "name": "topic",
+      "domain": "www.v2ex.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "v2ex",
+      "command": "v2ex/user",
+      "adapter": {
+        "command": "v2ex/user",
+        "urlArg": null
+      },
+      "name": "user",
+      "domain": "www.v2ex.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "weread",
+      "command": "weread/ranking",
+      "adapter": {
+        "command": "weread/ranking",
+        "urlArg": null
+      },
+      "name": "ranking",
+      "domain": "weread.qq.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "weread",
+      "command": "weread/search",
+      "adapter": {
+        "command": "weread/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": "weread.qq.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "wikipedia",
+      "command": "wikipedia/random",
+      "adapter": {
+        "command": "wikipedia/random",
+        "urlArg": null
+      },
+      "name": "random",
+      "domain": null,
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "wikipedia",
+      "command": "wikipedia/search",
+      "adapter": {
+        "command": "wikipedia/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": null,
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "wikipedia",
+      "command": "wikipedia/trending",
+      "adapter": {
+        "command": "wikipedia/trending",
+        "urlArg": null
+      },
+      "name": "trending",
+      "domain": null,
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "xiaoyuzhou",
+      "command": "xiaoyuzhou/download",
+      "adapter": {
+        "command": "xiaoyuzhou/download",
+        "urlArg": null
+      },
+      "name": "download",
+      "domain": "www.xiaoyuzhoufm.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "xiaoyuzhou",
+      "command": "xiaoyuzhou/episode",
+      "adapter": {
+        "command": "xiaoyuzhou/episode",
+        "urlArg": null
+      },
+      "name": "episode",
+      "domain": "www.xiaoyuzhoufm.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "xiaoyuzhou",
+      "command": "xiaoyuzhou/podcast",
+      "adapter": {
+        "command": "xiaoyuzhou/podcast",
+        "urlArg": null
+      },
+      "name": "podcast",
+      "domain": "www.xiaoyuzhoufm.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "xiaoyuzhou",
+      "command": "xiaoyuzhou/podcast-episodes",
+      "adapter": {
+        "command": "xiaoyuzhou/podcast-episodes",
+        "urlArg": null
+      },
+      "name": "podcast-episodes",
+      "domain": "www.xiaoyuzhoufm.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "xiaoyuzhou",
+      "command": "xiaoyuzhou/transcript",
+      "adapter": {
+        "command": "xiaoyuzhou/transcript",
+        "urlArg": null
+      },
+      "name": "transcript",
+      "domain": "www.xiaoyuzhoufm.com",
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "yollomi",
+      "command": "yollomi/models",
+      "adapter": {
+        "command": "yollomi/models",
+        "urlArg": null
+      },
+      "name": "models",
+      "domain": null,
+      "browser": false,
+      "acceptsUrl": false
+    },
+    {
+      "site": "1688",
+      "command": "1688/search",
+      "adapter": {
+        "command": "1688/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": "www.1688.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "1688",
+      "command": "1688/store",
+      "adapter": {
+        "command": "1688/store",
+        "urlArg": {
+          "name": "input",
+          "positional": true
+        }
+      },
+      "name": "store",
+      "domain": "www.1688.com",
+      "browser": true,
+      "acceptsUrl": true
+    },
+    {
+      "site": "36kr",
+      "command": "36kr/hot",
+      "adapter": {
+        "command": "36kr/hot",
+        "urlArg": null
+      },
+      "name": "hot",
+      "domain": "www.36kr.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "36kr",
+      "command": "36kr/search",
+      "adapter": {
+        "command": "36kr/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": "www.36kr.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "51job",
+      "command": "51job/company",
+      "adapter": {
+        "command": "51job/company",
+        "urlArg": null
+      },
+      "name": "company",
+      "domain": "jobs.51job.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "51job",
+      "command": "51job/hot",
+      "adapter": {
+        "command": "51job/hot",
+        "urlArg": null
+      },
+      "name": "hot",
+      "domain": "we.51job.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "51job",
+      "command": "51job/search",
+      "adapter": {
+        "command": "51job/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": "we.51job.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "amazon",
+      "command": "amazon/bestsellers",
+      "adapter": {
+        "command": "amazon/bestsellers",
+        "urlArg": {
+          "name": "input",
+          "positional": true
+        }
+      },
+      "name": "bestsellers",
+      "domain": "amazon.com",
+      "browser": true,
+      "acceptsUrl": true
+    },
+    {
+      "site": "amazon",
+      "command": "amazon/discussion",
+      "adapter": {
+        "command": "amazon/discussion",
+        "urlArg": {
+          "name": "input",
+          "positional": true
+        }
+      },
+      "name": "discussion",
+      "domain": "amazon.com",
+      "browser": true,
+      "acceptsUrl": true
+    },
+    {
+      "site": "amazon",
+      "command": "amazon/movers-shakers",
+      "adapter": {
+        "command": "amazon/movers-shakers",
+        "urlArg": {
+          "name": "input",
+          "positional": true
+        }
+      },
+      "name": "movers-shakers",
+      "domain": "amazon.com",
+      "browser": true,
+      "acceptsUrl": true
+    },
+    {
+      "site": "amazon",
+      "command": "amazon/new-releases",
+      "adapter": {
+        "command": "amazon/new-releases",
+        "urlArg": {
+          "name": "input",
+          "positional": true
+        }
+      },
+      "name": "new-releases",
+      "domain": "amazon.com",
+      "browser": true,
+      "acceptsUrl": true
+    },
+    {
+      "site": "amazon",
+      "command": "amazon/search",
+      "adapter": {
+        "command": "amazon/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": "amazon.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "antigravity",
+      "command": "antigravity/dump",
+      "adapter": {
+        "command": "antigravity/dump",
+        "urlArg": null
+      },
+      "name": "dump",
+      "domain": "localhost",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "antigravity",
+      "command": "antigravity/extract-code",
+      "adapter": {
+        "command": "antigravity/extract-code",
+        "urlArg": null
+      },
+      "name": "extract-code",
+      "domain": "localhost",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "antigravity",
+      "command": "antigravity/model",
+      "adapter": {
+        "command": "antigravity/model",
+        "urlArg": null
+      },
+      "name": "model",
+      "domain": "localhost",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "antigravity",
+      "command": "antigravity/new",
+      "adapter": {
+        "command": "antigravity/new",
+        "urlArg": null
+      },
+      "name": "new",
+      "domain": "localhost",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "antigravity",
+      "command": "antigravity/send",
+      "adapter": {
+        "command": "antigravity/send",
+        "urlArg": null
+      },
+      "name": "send",
+      "domain": "localhost",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "antigravity",
+      "command": "antigravity/status",
+      "adapter": {
+        "command": "antigravity/status",
+        "urlArg": null
+      },
+      "name": "status",
+      "domain": "localhost",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "antigravity",
+      "command": "antigravity/watch",
+      "adapter": {
+        "command": "antigravity/watch",
+        "urlArg": null
+      },
+      "name": "watch",
+      "domain": "localhost",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "baidu-scholar",
+      "command": "baidu-scholar/search",
+      "adapter": {
+        "command": "baidu-scholar/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": "xueshu.baidu.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "band",
+      "command": "band/bands",
+      "adapter": {
+        "command": "band/bands",
+        "urlArg": null
+      },
+      "name": "bands",
+      "domain": "www.band.us",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "band",
+      "command": "band/mentions",
+      "adapter": {
+        "command": "band/mentions",
+        "urlArg": null
+      },
+      "name": "mentions",
+      "domain": "www.band.us",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "band",
+      "command": "band/post",
+      "adapter": {
+        "command": "band/post",
+        "urlArg": null
+      },
+      "name": "post",
+      "domain": "www.band.us",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "band",
+      "command": "band/posts",
+      "adapter": {
+        "command": "band/posts",
+        "urlArg": null
+      },
+      "name": "posts",
+      "domain": "www.band.us",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "barchart",
+      "command": "barchart/flow",
+      "adapter": {
+        "command": "barchart/flow",
+        "urlArg": null
+      },
+      "name": "flow",
+      "domain": "www.barchart.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "barchart",
+      "command": "barchart/greeks",
+      "adapter": {
+        "command": "barchart/greeks",
+        "urlArg": null
+      },
+      "name": "greeks",
+      "domain": "www.barchart.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "barchart",
+      "command": "barchart/options",
+      "adapter": {
+        "command": "barchart/options",
+        "urlArg": null
+      },
+      "name": "options",
+      "domain": "www.barchart.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "barchart",
+      "command": "barchart/quote",
+      "adapter": {
+        "command": "barchart/quote",
+        "urlArg": null
+      },
+      "name": "quote",
+      "domain": "www.barchart.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "bilibili",
+      "command": "bilibili/dynamic",
+      "adapter": {
+        "command": "bilibili/dynamic",
+        "urlArg": null
+      },
+      "name": "dynamic",
+      "domain": "www.bilibili.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "bilibili",
+      "command": "bilibili/favorite",
+      "adapter": {
+        "command": "bilibili/favorite",
+        "urlArg": null
+      },
+      "name": "favorite",
+      "domain": "www.bilibili.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "bilibili",
+      "command": "bilibili/feed",
+      "adapter": {
+        "command": "bilibili/feed",
+        "urlArg": null
+      },
+      "name": "feed",
+      "domain": "www.bilibili.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "bilibili",
+      "command": "bilibili/feed-detail",
+      "adapter": {
+        "command": "bilibili/feed-detail",
+        "urlArg": null
+      },
+      "name": "feed-detail",
+      "domain": "www.bilibili.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "bilibili",
+      "command": "bilibili/following",
+      "adapter": {
+        "command": "bilibili/following",
+        "urlArg": null
+      },
+      "name": "following",
+      "domain": "www.bilibili.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "bilibili",
+      "command": "bilibili/history",
+      "adapter": {
+        "command": "bilibili/history",
+        "urlArg": null
+      },
+      "name": "history",
+      "domain": "www.bilibili.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "bilibili",
+      "command": "bilibili/hot",
+      "adapter": {
+        "command": "bilibili/hot",
+        "urlArg": null
+      },
+      "name": "hot",
+      "domain": "www.bilibili.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "bilibili",
+      "command": "bilibili/me",
+      "adapter": {
+        "command": "bilibili/me",
+        "urlArg": null
+      },
+      "name": "me",
+      "domain": "www.bilibili.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "bilibili",
+      "command": "bilibili/ranking",
+      "adapter": {
+        "command": "bilibili/ranking",
+        "urlArg": null
+      },
+      "name": "ranking",
+      "domain": "www.bilibili.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "bilibili",
+      "command": "bilibili/search",
+      "adapter": {
+        "command": "bilibili/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": "www.bilibili.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "bilibili",
+      "command": "bilibili/subtitle",
+      "adapter": {
+        "command": "bilibili/subtitle",
+        "urlArg": null
+      },
+      "name": "subtitle",
+      "domain": null,
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "bilibili",
+      "command": "bilibili/user-videos",
+      "adapter": {
+        "command": "bilibili/user-videos",
+        "urlArg": null
+      },
+      "name": "user-videos",
+      "domain": "www.bilibili.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "boss",
+      "command": "boss/batchgreet",
+      "adapter": {
+        "command": "boss/batchgreet",
+        "urlArg": null
+      },
+      "name": "batchgreet",
+      "domain": "www.zhipin.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "boss",
+      "command": "boss/chatlist",
+      "adapter": {
+        "command": "boss/chatlist",
+        "urlArg": null
+      },
+      "name": "chatlist",
+      "domain": "www.zhipin.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "boss",
+      "command": "boss/chatmsg",
+      "adapter": {
+        "command": "boss/chatmsg",
+        "urlArg": null
+      },
+      "name": "chatmsg",
+      "domain": "www.zhipin.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "boss",
+      "command": "boss/exchange",
+      "adapter": {
+        "command": "boss/exchange",
+        "urlArg": null
+      },
+      "name": "exchange",
+      "domain": "www.zhipin.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "boss",
+      "command": "boss/greet",
+      "adapter": {
+        "command": "boss/greet",
+        "urlArg": null
+      },
+      "name": "greet",
+      "domain": "www.zhipin.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "boss",
+      "command": "boss/invite",
+      "adapter": {
+        "command": "boss/invite",
+        "urlArg": null
+      },
+      "name": "invite",
+      "domain": "www.zhipin.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "boss",
+      "command": "boss/joblist",
+      "adapter": {
+        "command": "boss/joblist",
+        "urlArg": null
+      },
+      "name": "joblist",
+      "domain": "www.zhipin.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "boss",
+      "command": "boss/mark",
+      "adapter": {
+        "command": "boss/mark",
+        "urlArg": null
+      },
+      "name": "mark",
+      "domain": "www.zhipin.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "boss",
+      "command": "boss/recommend",
+      "adapter": {
+        "command": "boss/recommend",
+        "urlArg": null
+      },
+      "name": "recommend",
+      "domain": "www.zhipin.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "boss",
+      "command": "boss/resume",
+      "adapter": {
+        "command": "boss/resume",
+        "urlArg": null
+      },
+      "name": "resume",
+      "domain": "www.zhipin.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "boss",
+      "command": "boss/search",
+      "adapter": {
+        "command": "boss/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": "www.zhipin.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "boss",
+      "command": "boss/send",
+      "adapter": {
+        "command": "boss/send",
+        "urlArg": null
+      },
+      "name": "send",
+      "domain": "www.zhipin.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "boss",
+      "command": "boss/stats",
+      "adapter": {
+        "command": "boss/stats",
+        "urlArg": null
+      },
+      "name": "stats",
+      "domain": "www.zhipin.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "chaoxing",
+      "command": "chaoxing/assignments",
+      "adapter": {
+        "command": "chaoxing/assignments",
+        "urlArg": null
+      },
+      "name": "assignments",
+      "domain": "mooc2-ans.chaoxing.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "chaoxing",
+      "command": "chaoxing/exams",
+      "adapter": {
+        "command": "chaoxing/exams",
+        "urlArg": null
+      },
+      "name": "exams",
+      "domain": "mooc2-ans.chaoxing.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "chatgpt",
+      "command": "chatgpt/image",
+      "adapter": {
+        "command": "chatgpt/image",
+        "urlArg": null
+      },
+      "name": "image",
+      "domain": "chatgpt.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "chatwise",
+      "command": "chatwise/ask",
+      "adapter": {
+        "command": "chatwise/ask",
+        "urlArg": null
+      },
+      "name": "ask",
+      "domain": "localhost",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "chatwise",
+      "command": "chatwise/export",
+      "adapter": {
+        "command": "chatwise/export",
+        "urlArg": null
+      },
+      "name": "export",
+      "domain": "localhost",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "chatwise",
+      "command": "chatwise/history",
+      "adapter": {
+        "command": "chatwise/history",
+        "urlArg": null
+      },
+      "name": "history",
+      "domain": "localhost",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "chatwise",
+      "command": "chatwise/model",
+      "adapter": {
+        "command": "chatwise/model",
+        "urlArg": null
+      },
+      "name": "model",
+      "domain": "localhost",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "chatwise",
+      "command": "chatwise/send",
+      "adapter": {
+        "command": "chatwise/send",
+        "urlArg": null
+      },
+      "name": "send",
+      "domain": "localhost",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "cnki",
+      "command": "cnki/search",
+      "adapter": {
+        "command": "cnki/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": "oversea.cnki.net",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "codex",
+      "command": "codex/ask",
+      "adapter": {
+        "command": "codex/ask",
+        "urlArg": null
+      },
+      "name": "ask",
+      "domain": "localhost",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "codex",
+      "command": "codex/export",
+      "adapter": {
+        "command": "codex/export",
+        "urlArg": null
+      },
+      "name": "export",
+      "domain": "localhost",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "codex",
+      "command": "codex/extract-diff",
+      "adapter": {
+        "command": "codex/extract-diff",
+        "urlArg": null
+      },
+      "name": "extract-diff",
+      "domain": "localhost",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "codex",
+      "command": "codex/history",
+      "adapter": {
+        "command": "codex/history",
+        "urlArg": null
+      },
+      "name": "history",
+      "domain": "localhost",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "codex",
+      "command": "codex/model",
+      "adapter": {
+        "command": "codex/model",
+        "urlArg": null
+      },
+      "name": "model",
+      "domain": "localhost",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "codex",
+      "command": "codex/send",
+      "adapter": {
+        "command": "codex/send",
+        "urlArg": null
+      },
+      "name": "send",
+      "domain": "localhost",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "coupang",
+      "command": "coupang/add-to-cart",
+      "adapter": {
+        "command": "coupang/add-to-cart",
+        "urlArg": {
+          "name": "url",
+          "positional": false
+        }
+      },
+      "name": "add-to-cart",
+      "domain": "www.coupang.com",
+      "browser": true,
+      "acceptsUrl": true
+    },
+    {
+      "site": "coupang",
+      "command": "coupang/search",
+      "adapter": {
+        "command": "coupang/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": "www.coupang.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "cursor",
+      "command": "cursor/ask",
+      "adapter": {
+        "command": "cursor/ask",
+        "urlArg": null
+      },
+      "name": "ask",
+      "domain": "localhost",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "cursor",
+      "command": "cursor/composer",
+      "adapter": {
+        "command": "cursor/composer",
+        "urlArg": null
+      },
+      "name": "composer",
+      "domain": "localhost",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "cursor",
+      "command": "cursor/export",
+      "adapter": {
+        "command": "cursor/export",
+        "urlArg": null
+      },
+      "name": "export",
+      "domain": "localhost",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "cursor",
+      "command": "cursor/extract-code",
+      "adapter": {
+        "command": "cursor/extract-code",
+        "urlArg": null
+      },
+      "name": "extract-code",
+      "domain": "localhost",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "cursor",
+      "command": "cursor/history",
+      "adapter": {
+        "command": "cursor/history",
+        "urlArg": null
+      },
+      "name": "history",
+      "domain": "localhost",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "cursor",
+      "command": "cursor/model",
+      "adapter": {
+        "command": "cursor/model",
+        "urlArg": null
+      },
+      "name": "model",
+      "domain": "localhost",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "cursor",
+      "command": "cursor/send",
+      "adapter": {
+        "command": "cursor/send",
+        "urlArg": null
+      },
+      "name": "send",
+      "domain": "localhost",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "deepseek",
+      "command": "deepseek/ask",
+      "adapter": {
+        "command": "deepseek/ask",
+        "urlArg": null
+      },
+      "name": "ask",
+      "domain": "chat.deepseek.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "deepseek",
+      "command": "deepseek/history",
+      "adapter": {
+        "command": "deepseek/history",
+        "urlArg": null
+      },
+      "name": "history",
+      "domain": "chat.deepseek.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "deepseek",
+      "command": "deepseek/new",
+      "adapter": {
+        "command": "deepseek/new",
+        "urlArg": null
+      },
+      "name": "new",
+      "domain": "chat.deepseek.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "deepseek",
+      "command": "deepseek/status",
+      "adapter": {
+        "command": "deepseek/status",
+        "urlArg": null
+      },
+      "name": "status",
+      "domain": "chat.deepseek.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "discord-app",
+      "command": "discord-app/channels",
+      "adapter": {
+        "command": "discord-app/channels",
+        "urlArg": null
+      },
+      "name": "channels",
+      "domain": "localhost",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "discord-app",
+      "command": "discord-app/delete",
+      "adapter": {
+        "command": "discord-app/delete",
+        "urlArg": null
+      },
+      "name": "delete",
+      "domain": "localhost",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "discord-app",
+      "command": "discord-app/members",
+      "adapter": {
+        "command": "discord-app/members",
+        "urlArg": null
+      },
+      "name": "members",
+      "domain": "localhost",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "discord-app",
+      "command": "discord-app/search",
+      "adapter": {
+        "command": "discord-app/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": "localhost",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "discord-app",
+      "command": "discord-app/send",
+      "adapter": {
+        "command": "discord-app/send",
+        "urlArg": null
+      },
+      "name": "send",
+      "domain": "localhost",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "discord-app",
+      "command": "discord-app/servers",
+      "adapter": {
+        "command": "discord-app/servers",
+        "urlArg": null
+      },
+      "name": "servers",
+      "domain": "localhost",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "discord-app",
+      "command": "discord-app/status",
+      "adapter": {
+        "command": "discord-app/status",
+        "urlArg": null
+      },
+      "name": "status",
+      "domain": "localhost",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "douban",
+      "command": "douban/book-hot",
+      "adapter": {
+        "command": "douban/book-hot",
+        "urlArg": null
+      },
+      "name": "book-hot",
+      "domain": "book.douban.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "douban",
+      "command": "douban/marks",
+      "adapter": {
+        "command": "douban/marks",
+        "urlArg": null
+      },
+      "name": "marks",
+      "domain": "movie.douban.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "douban",
+      "command": "douban/movie-hot",
+      "adapter": {
+        "command": "douban/movie-hot",
+        "urlArg": null
+      },
+      "name": "movie-hot",
+      "domain": "movie.douban.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "douban",
+      "command": "douban/photos",
+      "adapter": {
+        "command": "douban/photos",
+        "urlArg": null
+      },
+      "name": "photos",
+      "domain": "movie.douban.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "douban",
+      "command": "douban/reviews",
+      "adapter": {
+        "command": "douban/reviews",
+        "urlArg": null
+      },
+      "name": "reviews",
+      "domain": "movie.douban.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "douban",
+      "command": "douban/search",
+      "adapter": {
+        "command": "douban/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": "search.douban.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "douban",
+      "command": "douban/subject",
+      "adapter": {
+        "command": "douban/subject",
+        "urlArg": null
+      },
+      "name": "subject",
+      "domain": "movie.douban.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "douban",
+      "command": "douban/top250",
+      "adapter": {
+        "command": "douban/top250",
+        "urlArg": null
+      },
+      "name": "top250",
+      "domain": "movie.douban.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "doubao-app",
+      "command": "doubao-app/ask",
+      "adapter": {
+        "command": "doubao-app/ask",
+        "urlArg": null
+      },
+      "name": "ask",
+      "domain": "doubao-app",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "doubao-app",
+      "command": "doubao-app/dump",
+      "adapter": {
+        "command": "doubao-app/dump",
+        "urlArg": null
+      },
+      "name": "dump",
+      "domain": "doubao-app",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "doubao-app",
+      "command": "doubao-app/new",
+      "adapter": {
+        "command": "doubao-app/new",
+        "urlArg": null
+      },
+      "name": "new",
+      "domain": "doubao-app",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "doubao-app",
+      "command": "doubao-app/screenshot",
+      "adapter": {
+        "command": "doubao-app/screenshot",
+        "urlArg": null
+      },
+      "name": "screenshot",
+      "domain": "doubao-app",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "doubao-app",
+      "command": "doubao-app/send",
+      "adapter": {
+        "command": "doubao-app/send",
+        "urlArg": null
+      },
+      "name": "send",
+      "domain": "doubao-app",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "doubao-app",
+      "command": "doubao-app/status",
+      "adapter": {
+        "command": "doubao-app/status",
+        "urlArg": null
+      },
+      "name": "status",
+      "domain": "doubao-app",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "doubao",
+      "command": "doubao/ask",
+      "adapter": {
+        "command": "doubao/ask",
+        "urlArg": null
+      },
+      "name": "ask",
+      "domain": "www.doubao.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "doubao",
+      "command": "doubao/history",
+      "adapter": {
+        "command": "doubao/history",
+        "urlArg": null
+      },
+      "name": "history",
+      "domain": "www.doubao.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "doubao",
+      "command": "doubao/meeting-summary",
+      "adapter": {
+        "command": "doubao/meeting-summary",
+        "urlArg": null
+      },
+      "name": "meeting-summary",
+      "domain": "www.doubao.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "doubao",
+      "command": "doubao/meeting-transcript",
+      "adapter": {
+        "command": "doubao/meeting-transcript",
+        "urlArg": null
+      },
+      "name": "meeting-transcript",
+      "domain": "www.doubao.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "doubao",
+      "command": "doubao/new",
+      "adapter": {
+        "command": "doubao/new",
+        "urlArg": null
+      },
+      "name": "new",
+      "domain": "www.doubao.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "doubao",
+      "command": "doubao/send",
+      "adapter": {
+        "command": "doubao/send",
+        "urlArg": null
+      },
+      "name": "send",
+      "domain": "www.doubao.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "doubao",
+      "command": "doubao/status",
+      "adapter": {
+        "command": "doubao/status",
+        "urlArg": null
+      },
+      "name": "status",
+      "domain": "www.doubao.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "douyin",
+      "command": "douyin/activities",
+      "adapter": {
+        "command": "douyin/activities",
+        "urlArg": null
+      },
+      "name": "activities",
+      "domain": "creator.douyin.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "douyin",
+      "command": "douyin/collections",
+      "adapter": {
+        "command": "douyin/collections",
+        "urlArg": null
+      },
+      "name": "collections",
+      "domain": "creator.douyin.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "douyin",
+      "command": "douyin/delete",
+      "adapter": {
+        "command": "douyin/delete",
+        "urlArg": null
+      },
+      "name": "delete",
+      "domain": "creator.douyin.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "douyin",
+      "command": "douyin/draft",
+      "adapter": {
+        "command": "douyin/draft",
+        "urlArg": null
+      },
+      "name": "draft",
+      "domain": "creator.douyin.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "douyin",
+      "command": "douyin/drafts",
+      "adapter": {
+        "command": "douyin/drafts",
+        "urlArg": null
+      },
+      "name": "drafts",
+      "domain": "creator.douyin.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "douyin",
+      "command": "douyin/hashtag",
+      "adapter": {
+        "command": "douyin/hashtag",
+        "urlArg": null
+      },
+      "name": "hashtag",
+      "domain": "creator.douyin.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "douyin",
+      "command": "douyin/location",
+      "adapter": {
+        "command": "douyin/location",
+        "urlArg": null
+      },
+      "name": "location",
+      "domain": "creator.douyin.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "douyin",
+      "command": "douyin/profile",
+      "adapter": {
+        "command": "douyin/profile",
+        "urlArg": null
+      },
+      "name": "profile",
+      "domain": "creator.douyin.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "douyin",
+      "command": "douyin/publish",
+      "adapter": {
+        "command": "douyin/publish",
+        "urlArg": null
+      },
+      "name": "publish",
+      "domain": "creator.douyin.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "douyin",
+      "command": "douyin/stats",
+      "adapter": {
+        "command": "douyin/stats",
+        "urlArg": null
+      },
+      "name": "stats",
+      "domain": "creator.douyin.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "douyin",
+      "command": "douyin/update",
+      "adapter": {
+        "command": "douyin/update",
+        "urlArg": null
+      },
+      "name": "update",
+      "domain": "creator.douyin.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "douyin",
+      "command": "douyin/user-videos",
+      "adapter": {
+        "command": "douyin/user-videos",
+        "urlArg": null
+      },
+      "name": "user-videos",
+      "domain": "www.douyin.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "douyin",
+      "command": "douyin/videos",
+      "adapter": {
+        "command": "douyin/videos",
+        "urlArg": null
+      },
+      "name": "videos",
+      "domain": "creator.douyin.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "eastmoney",
+      "command": "eastmoney/hot-rank",
+      "adapter": {
+        "command": "eastmoney/hot-rank",
+        "urlArg": null
+      },
+      "name": "hot-rank",
+      "domain": "guba.eastmoney.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "facebook",
+      "command": "facebook/add-friend",
+      "adapter": {
+        "command": "facebook/add-friend",
+        "urlArg": null
+      },
+      "name": "add-friend",
+      "domain": "www.facebook.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "facebook",
+      "command": "facebook/events",
+      "adapter": {
+        "command": "facebook/events",
+        "urlArg": null
+      },
+      "name": "events",
+      "domain": "www.facebook.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "facebook",
+      "command": "facebook/feed",
+      "adapter": {
+        "command": "facebook/feed",
+        "urlArg": null
+      },
+      "name": "feed",
+      "domain": "www.facebook.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "facebook",
+      "command": "facebook/friends",
+      "adapter": {
+        "command": "facebook/friends",
+        "urlArg": null
+      },
+      "name": "friends",
+      "domain": "www.facebook.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "facebook",
+      "command": "facebook/groups",
+      "adapter": {
+        "command": "facebook/groups",
+        "urlArg": null
+      },
+      "name": "groups",
+      "domain": "www.facebook.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "facebook",
+      "command": "facebook/join-group",
+      "adapter": {
+        "command": "facebook/join-group",
+        "urlArg": null
+      },
+      "name": "join-group",
+      "domain": "www.facebook.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "facebook",
+      "command": "facebook/memories",
+      "adapter": {
+        "command": "facebook/memories",
+        "urlArg": null
+      },
+      "name": "memories",
+      "domain": "www.facebook.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "facebook",
+      "command": "facebook/notifications",
+      "adapter": {
+        "command": "facebook/notifications",
+        "urlArg": null
+      },
+      "name": "notifications",
+      "domain": "www.facebook.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "facebook",
+      "command": "facebook/profile",
+      "adapter": {
+        "command": "facebook/profile",
+        "urlArg": null
+      },
+      "name": "profile",
+      "domain": "www.facebook.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "facebook",
+      "command": "facebook/search",
+      "adapter": {
+        "command": "facebook/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": "www.facebook.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "gemini",
+      "command": "gemini/ask",
+      "adapter": {
+        "command": "gemini/ask",
+        "urlArg": null
+      },
+      "name": "ask",
+      "domain": "gemini.google.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "gemini",
+      "command": "gemini/deep-research",
+      "adapter": {
+        "command": "gemini/deep-research",
+        "urlArg": null
+      },
+      "name": "deep-research",
+      "domain": "gemini.google.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "gemini",
+      "command": "gemini/deep-research-result",
+      "adapter": {
+        "command": "gemini/deep-research-result",
+        "urlArg": null
+      },
+      "name": "deep-research-result",
+      "domain": "gemini.google.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "gemini",
+      "command": "gemini/image",
+      "adapter": {
+        "command": "gemini/image",
+        "urlArg": null
+      },
+      "name": "image",
+      "domain": "gemini.google.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "gemini",
+      "command": "gemini/new",
+      "adapter": {
+        "command": "gemini/new",
+        "urlArg": null
+      },
+      "name": "new",
+      "domain": "gemini.google.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "gitee",
+      "command": "gitee/search",
+      "adapter": {
+        "command": "gitee/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": "gitee.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "gitee",
+      "command": "gitee/trending",
+      "adapter": {
+        "command": "gitee/trending",
+        "urlArg": null
+      },
+      "name": "trending",
+      "domain": "gitee.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "gitee",
+      "command": "gitee/user",
+      "adapter": {
+        "command": "gitee/user",
+        "urlArg": null
+      },
+      "name": "user",
+      "domain": "gitee.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "google-scholar",
+      "command": "google-scholar/search",
+      "adapter": {
+        "command": "google-scholar/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": "scholar.google.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "google",
+      "command": "google/search",
+      "adapter": {
+        "command": "google/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": "google.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "gov-law",
+      "command": "gov-law/recent",
+      "adapter": {
+        "command": "gov-law/recent",
+        "urlArg": null
+      },
+      "name": "recent",
+      "domain": "flk.npc.gov.cn",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "gov-law",
+      "command": "gov-law/search",
+      "adapter": {
+        "command": "gov-law/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": "flk.npc.gov.cn",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "gov-policy",
+      "command": "gov-policy/recent",
+      "adapter": {
+        "command": "gov-policy/recent",
+        "urlArg": null
+      },
+      "name": "recent",
+      "domain": "www.gov.cn",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "gov-policy",
+      "command": "gov-policy/search",
+      "adapter": {
+        "command": "gov-policy/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": "sousuo.www.gov.cn",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "grok",
+      "command": "grok/ask",
+      "adapter": {
+        "command": "grok/ask",
+        "urlArg": null
+      },
+      "name": "ask",
+      "domain": "grok.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "hupu",
+      "command": "hupu/hot",
+      "adapter": {
+        "command": "hupu/hot",
+        "urlArg": null
+      },
+      "name": "hot",
+      "domain": "bbs.hupu.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "hupu",
+      "command": "hupu/mentions",
+      "adapter": {
+        "command": "hupu/mentions",
+        "urlArg": null
+      },
+      "name": "mentions",
+      "domain": "my.hupu.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "hupu",
+      "command": "hupu/reply",
+      "adapter": {
+        "command": "hupu/reply",
+        "urlArg": null
+      },
+      "name": "reply",
+      "domain": "bbs.hupu.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "hupu",
+      "command": "hupu/search",
+      "adapter": {
+        "command": "hupu/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": "bbs.hupu.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "imdb",
+      "command": "imdb/person",
+      "adapter": {
+        "command": "imdb/person",
+        "urlArg": null
+      },
+      "name": "person",
+      "domain": "www.imdb.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "imdb",
+      "command": "imdb/reviews",
+      "adapter": {
+        "command": "imdb/reviews",
+        "urlArg": null
+      },
+      "name": "reviews",
+      "domain": "www.imdb.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "imdb",
+      "command": "imdb/search",
+      "adapter": {
+        "command": "imdb/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": "www.imdb.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "imdb",
+      "command": "imdb/title",
+      "adapter": {
+        "command": "imdb/title",
+        "urlArg": null
+      },
+      "name": "title",
+      "domain": "www.imdb.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "imdb",
+      "command": "imdb/top",
+      "adapter": {
+        "command": "imdb/top",
+        "urlArg": null
+      },
+      "name": "top",
+      "domain": "www.imdb.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "imdb",
+      "command": "imdb/trending",
+      "adapter": {
+        "command": "imdb/trending",
+        "urlArg": null
+      },
+      "name": "trending",
+      "domain": "www.imdb.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "instagram",
+      "command": "instagram/explore",
+      "adapter": {
+        "command": "instagram/explore",
+        "urlArg": null
+      },
+      "name": "explore",
+      "domain": "www.instagram.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "instagram",
+      "command": "instagram/follow",
+      "adapter": {
+        "command": "instagram/follow",
+        "urlArg": null
+      },
+      "name": "follow",
+      "domain": "www.instagram.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "instagram",
+      "command": "instagram/followers",
+      "adapter": {
+        "command": "instagram/followers",
+        "urlArg": null
+      },
+      "name": "followers",
+      "domain": "www.instagram.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "instagram",
+      "command": "instagram/following",
+      "adapter": {
+        "command": "instagram/following",
+        "urlArg": null
+      },
+      "name": "following",
+      "domain": "www.instagram.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "instagram",
+      "command": "instagram/note",
+      "adapter": {
+        "command": "instagram/note",
+        "urlArg": null
+      },
+      "name": "note",
+      "domain": "www.instagram.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "instagram",
+      "command": "instagram/post",
+      "adapter": {
+        "command": "instagram/post",
+        "urlArg": null
+      },
+      "name": "post",
+      "domain": "www.instagram.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "instagram",
+      "command": "instagram/profile",
+      "adapter": {
+        "command": "instagram/profile",
+        "urlArg": null
+      },
+      "name": "profile",
+      "domain": "www.instagram.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "instagram",
+      "command": "instagram/reel",
+      "adapter": {
+        "command": "instagram/reel",
+        "urlArg": null
+      },
+      "name": "reel",
+      "domain": "www.instagram.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "instagram",
+      "command": "instagram/save",
+      "adapter": {
+        "command": "instagram/save",
+        "urlArg": null
+      },
+      "name": "save",
+      "domain": "www.instagram.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "instagram",
+      "command": "instagram/saved",
+      "adapter": {
+        "command": "instagram/saved",
+        "urlArg": null
+      },
+      "name": "saved",
+      "domain": "www.instagram.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "instagram",
+      "command": "instagram/search",
+      "adapter": {
+        "command": "instagram/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": "www.instagram.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "instagram",
+      "command": "instagram/story",
+      "adapter": {
+        "command": "instagram/story",
+        "urlArg": null
+      },
+      "name": "story",
+      "domain": "www.instagram.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "instagram",
+      "command": "instagram/unfollow",
+      "adapter": {
+        "command": "instagram/unfollow",
+        "urlArg": null
+      },
+      "name": "unfollow",
+      "domain": "www.instagram.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "instagram",
+      "command": "instagram/unsave",
+      "adapter": {
+        "command": "instagram/unsave",
+        "urlArg": null
+      },
+      "name": "unsave",
+      "domain": "www.instagram.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "instagram",
+      "command": "instagram/user",
+      "adapter": {
+        "command": "instagram/user",
+        "urlArg": null
+      },
+      "name": "user",
+      "domain": "www.instagram.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "jd",
+      "command": "jd/add-cart",
+      "adapter": {
+        "command": "jd/add-cart",
+        "urlArg": null
+      },
+      "name": "add-cart",
+      "domain": "item.jd.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "jd",
+      "command": "jd/cart",
+      "adapter": {
+        "command": "jd/cart",
+        "urlArg": null
+      },
+      "name": "cart",
+      "domain": "cart.jd.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "jd",
+      "command": "jd/reviews",
+      "adapter": {
+        "command": "jd/reviews",
+        "urlArg": null
+      },
+      "name": "reviews",
+      "domain": "item.jd.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "jd",
+      "command": "jd/search",
+      "adapter": {
+        "command": "jd/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": "search.jd.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "jianyu",
+      "command": "jianyu/search",
+      "adapter": {
+        "command": "jianyu/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": "www.jianyu360.cn",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "jike",
+      "command": "jike/create",
+      "adapter": {
+        "command": "jike/create",
+        "urlArg": null
+      },
+      "name": "create",
+      "domain": "web.okjike.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "jike",
+      "command": "jike/feed",
+      "adapter": {
+        "command": "jike/feed",
+        "urlArg": null
+      },
+      "name": "feed",
+      "domain": "web.okjike.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "jike",
+      "command": "jike/notifications",
+      "adapter": {
+        "command": "jike/notifications",
+        "urlArg": null
+      },
+      "name": "notifications",
+      "domain": "web.okjike.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "jike",
+      "command": "jike/post",
+      "adapter": {
+        "command": "jike/post",
+        "urlArg": null
+      },
+      "name": "post",
+      "domain": "m.okjike.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "jike",
+      "command": "jike/repost",
+      "adapter": {
+        "command": "jike/repost",
+        "urlArg": null
+      },
+      "name": "repost",
+      "domain": "web.okjike.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "jike",
+      "command": "jike/search",
+      "adapter": {
+        "command": "jike/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": "web.okjike.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "jike",
+      "command": "jike/topic",
+      "adapter": {
+        "command": "jike/topic",
+        "urlArg": null
+      },
+      "name": "topic",
+      "domain": "m.okjike.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "jike",
+      "command": "jike/user",
+      "adapter": {
+        "command": "jike/user",
+        "urlArg": null
+      },
+      "name": "user",
+      "domain": "m.okjike.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "jimeng",
+      "command": "jimeng/generate",
+      "adapter": {
+        "command": "jimeng/generate",
+        "urlArg": null
+      },
+      "name": "generate",
+      "domain": "jimeng.jianying.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "jimeng",
+      "command": "jimeng/history",
+      "adapter": {
+        "command": "jimeng/history",
+        "urlArg": null
+      },
+      "name": "history",
+      "domain": "jimeng.jianying.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "jimeng",
+      "command": "jimeng/new",
+      "adapter": {
+        "command": "jimeng/new",
+        "urlArg": null
+      },
+      "name": "new",
+      "domain": "jimeng.jianying.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "jimeng",
+      "command": "jimeng/workspaces",
+      "adapter": {
+        "command": "jimeng/workspaces",
+        "urlArg": null
+      },
+      "name": "workspaces",
+      "domain": "jimeng.jianying.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "ke",
+      "command": "ke/chengjiao",
+      "adapter": {
+        "command": "ke/chengjiao",
+        "urlArg": null
+      },
+      "name": "chengjiao",
+      "domain": "ke.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "ke",
+      "command": "ke/ershoufang",
+      "adapter": {
+        "command": "ke/ershoufang",
+        "urlArg": null
+      },
+      "name": "ershoufang",
+      "domain": "ke.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "ke",
+      "command": "ke/xiaoqu",
+      "adapter": {
+        "command": "ke/xiaoqu",
+        "urlArg": null
+      },
+      "name": "xiaoqu",
+      "domain": "ke.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "ke",
+      "command": "ke/zufang",
+      "adapter": {
+        "command": "ke/zufang",
+        "urlArg": null
+      },
+      "name": "zufang",
+      "domain": "ke.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "linkedin",
+      "command": "linkedin/search",
+      "adapter": {
+        "command": "linkedin/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": "www.linkedin.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "linkedin",
+      "command": "linkedin/timeline",
+      "adapter": {
+        "command": "linkedin/timeline",
+        "urlArg": null
+      },
+      "name": "timeline",
+      "domain": "www.linkedin.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "linux-do",
+      "command": "linux-do/categories",
+      "adapter": {
+        "command": "linux-do/categories",
+        "urlArg": null
+      },
+      "name": "categories",
+      "domain": "linux.do",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "linux-do",
+      "command": "linux-do/category",
+      "adapter": {
+        "command": "linux-do/category",
+        "urlArg": null
+      },
+      "name": "category",
+      "domain": "linux.do",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "linux-do",
+      "command": "linux-do/feed",
+      "adapter": {
+        "command": "linux-do/feed",
+        "urlArg": null
+      },
+      "name": "feed",
+      "domain": "linux.do",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "linux-do",
+      "command": "linux-do/hot",
+      "adapter": {
+        "command": "linux-do/hot",
+        "urlArg": null
+      },
+      "name": "hot",
+      "domain": "linux.do",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "linux-do",
+      "command": "linux-do/latest",
+      "adapter": {
+        "command": "linux-do/latest",
+        "urlArg": null
+      },
+      "name": "latest",
+      "domain": "linux.do",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "linux-do",
+      "command": "linux-do/search",
+      "adapter": {
+        "command": "linux-do/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": "linux.do",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "linux-do",
+      "command": "linux-do/tags",
+      "adapter": {
+        "command": "linux-do/tags",
+        "urlArg": null
+      },
+      "name": "tags",
+      "domain": "linux.do",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "linux-do",
+      "command": "linux-do/topic",
+      "adapter": {
+        "command": "linux-do/topic",
+        "urlArg": null
+      },
+      "name": "topic",
+      "domain": "linux.do",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "linux-do",
+      "command": "linux-do/topic-content",
+      "adapter": {
+        "command": "linux-do/topic-content",
+        "urlArg": null
+      },
+      "name": "topic-content",
+      "domain": "linux.do",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "linux-do",
+      "command": "linux-do/user-posts",
+      "adapter": {
+        "command": "linux-do/user-posts",
+        "urlArg": null
+      },
+      "name": "user-posts",
+      "domain": "linux.do",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "linux-do",
+      "command": "linux-do/user-topics",
+      "adapter": {
+        "command": "linux-do/user-topics",
+        "urlArg": null
+      },
+      "name": "user-topics",
+      "domain": "linux.do",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "maimai",
+      "command": "maimai/search-talents",
+      "adapter": {
+        "command": "maimai/search-talents",
+        "urlArg": null
+      },
+      "name": "search-talents",
+      "domain": "maimai.cn",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "medium",
+      "command": "medium/feed",
+      "adapter": {
+        "command": "medium/feed",
+        "urlArg": null
+      },
+      "name": "feed",
+      "domain": "medium.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "medium",
+      "command": "medium/search",
+      "adapter": {
+        "command": "medium/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": "medium.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "medium",
+      "command": "medium/user",
+      "adapter": {
+        "command": "medium/user",
+        "urlArg": null
+      },
+      "name": "user",
+      "domain": "medium.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "mubu",
+      "command": "mubu/doc",
+      "adapter": {
+        "command": "mubu/doc",
+        "urlArg": null
+      },
+      "name": "doc",
+      "domain": "mubu.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "mubu",
+      "command": "mubu/docs",
+      "adapter": {
+        "command": "mubu/docs",
+        "urlArg": null
+      },
+      "name": "docs",
+      "domain": "mubu.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "mubu",
+      "command": "mubu/notes",
+      "adapter": {
+        "command": "mubu/notes",
+        "urlArg": null
+      },
+      "name": "notes",
+      "domain": "mubu.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "mubu",
+      "command": "mubu/recent",
+      "adapter": {
+        "command": "mubu/recent",
+        "urlArg": null
+      },
+      "name": "recent",
+      "domain": "mubu.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "mubu",
+      "command": "mubu/search",
+      "adapter": {
+        "command": "mubu/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": "mubu.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "notebooklm",
+      "command": "notebooklm/current",
+      "adapter": {
+        "command": "notebooklm/current",
+        "urlArg": null
+      },
+      "name": "current",
+      "domain": "notebooklm.google.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "notebooklm",
+      "command": "notebooklm/get",
+      "adapter": {
+        "command": "notebooklm/get",
+        "urlArg": null
+      },
+      "name": "get",
+      "domain": "notebooklm.google.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "notebooklm",
+      "command": "notebooklm/history",
+      "adapter": {
+        "command": "notebooklm/history",
+        "urlArg": null
+      },
+      "name": "history",
+      "domain": "notebooklm.google.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "notebooklm",
+      "command": "notebooklm/list",
+      "adapter": {
+        "command": "notebooklm/list",
+        "urlArg": null
+      },
+      "name": "list",
+      "domain": "notebooklm.google.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "notebooklm",
+      "command": "notebooklm/note-list",
+      "adapter": {
+        "command": "notebooklm/note-list",
+        "urlArg": null
+      },
+      "name": "note-list",
+      "domain": "notebooklm.google.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "notebooklm",
+      "command": "notebooklm/notes-get",
+      "adapter": {
+        "command": "notebooklm/notes-get",
+        "urlArg": null
+      },
+      "name": "notes-get",
+      "domain": "notebooklm.google.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "notebooklm",
+      "command": "notebooklm/open",
+      "adapter": {
+        "command": "notebooklm/open",
+        "urlArg": null
+      },
+      "name": "open",
+      "domain": "notebooklm.google.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "notebooklm",
+      "command": "notebooklm/source-fulltext",
+      "adapter": {
+        "command": "notebooklm/source-fulltext",
+        "urlArg": null
+      },
+      "name": "source-fulltext",
+      "domain": "notebooklm.google.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "notebooklm",
+      "command": "notebooklm/source-get",
+      "adapter": {
+        "command": "notebooklm/source-get",
+        "urlArg": null
+      },
+      "name": "source-get",
+      "domain": "notebooklm.google.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "notebooklm",
+      "command": "notebooklm/source-guide",
+      "adapter": {
+        "command": "notebooklm/source-guide",
+        "urlArg": null
+      },
+      "name": "source-guide",
+      "domain": "notebooklm.google.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "notebooklm",
+      "command": "notebooklm/source-list",
+      "adapter": {
+        "command": "notebooklm/source-list",
+        "urlArg": null
+      },
+      "name": "source-list",
+      "domain": "notebooklm.google.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "notebooklm",
+      "command": "notebooklm/status",
+      "adapter": {
+        "command": "notebooklm/status",
+        "urlArg": null
+      },
+      "name": "status",
+      "domain": "notebooklm.google.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "notion",
+      "command": "notion/export",
+      "adapter": {
+        "command": "notion/export",
+        "urlArg": null
+      },
+      "name": "export",
+      "domain": "localhost",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "notion",
+      "command": "notion/favorites",
+      "adapter": {
+        "command": "notion/favorites",
+        "urlArg": null
+      },
+      "name": "favorites",
+      "domain": "localhost",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "notion",
+      "command": "notion/new",
+      "adapter": {
+        "command": "notion/new",
+        "urlArg": null
+      },
+      "name": "new",
+      "domain": "localhost",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "notion",
+      "command": "notion/search",
+      "adapter": {
+        "command": "notion/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": "localhost",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "notion",
+      "command": "notion/sidebar",
+      "adapter": {
+        "command": "notion/sidebar",
+        "urlArg": null
+      },
+      "name": "sidebar",
+      "domain": "localhost",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "notion",
+      "command": "notion/status",
+      "adapter": {
+        "command": "notion/status",
+        "urlArg": null
+      },
+      "name": "status",
+      "domain": "localhost",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "notion",
+      "command": "notion/write",
+      "adapter": {
+        "command": "notion/write",
+        "urlArg": null
+      },
+      "name": "write",
+      "domain": "localhost",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "nowcoder",
+      "command": "nowcoder/experience",
+      "adapter": {
+        "command": "nowcoder/experience",
+        "urlArg": null
+      },
+      "name": "experience",
+      "domain": "www.nowcoder.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "nowcoder",
+      "command": "nowcoder/notifications",
+      "adapter": {
+        "command": "nowcoder/notifications",
+        "urlArg": null
+      },
+      "name": "notifications",
+      "domain": "www.nowcoder.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "nowcoder",
+      "command": "nowcoder/papers",
+      "adapter": {
+        "command": "nowcoder/papers",
+        "urlArg": null
+      },
+      "name": "papers",
+      "domain": "www.nowcoder.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "nowcoder",
+      "command": "nowcoder/practice",
+      "adapter": {
+        "command": "nowcoder/practice",
+        "urlArg": null
+      },
+      "name": "practice",
+      "domain": "www.nowcoder.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "nowcoder",
+      "command": "nowcoder/referral",
+      "adapter": {
+        "command": "nowcoder/referral",
+        "urlArg": null
+      },
+      "name": "referral",
+      "domain": "www.nowcoder.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "nowcoder",
+      "command": "nowcoder/salary",
+      "adapter": {
+        "command": "nowcoder/salary",
+        "urlArg": null
+      },
+      "name": "salary",
+      "domain": "www.nowcoder.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "nowcoder",
+      "command": "nowcoder/search",
+      "adapter": {
+        "command": "nowcoder/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": "www.nowcoder.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "nowcoder",
+      "command": "nowcoder/suggest",
+      "adapter": {
+        "command": "nowcoder/suggest",
+        "urlArg": null
+      },
+      "name": "suggest",
+      "domain": "www.nowcoder.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "ones",
+      "command": "ones/login",
+      "adapter": {
+        "command": "ones/login",
+        "urlArg": null
+      },
+      "name": "login",
+      "domain": "ones.cn",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "ones",
+      "command": "ones/logout",
+      "adapter": {
+        "command": "ones/logout",
+        "urlArg": null
+      },
+      "name": "logout",
+      "domain": "ones.cn",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "ones",
+      "command": "ones/me",
+      "adapter": {
+        "command": "ones/me",
+        "urlArg": null
+      },
+      "name": "me",
+      "domain": "ones.cn",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "ones",
+      "command": "ones/my-tasks",
+      "adapter": {
+        "command": "ones/my-tasks",
+        "urlArg": null
+      },
+      "name": "my-tasks",
+      "domain": "ones.cn",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "ones",
+      "command": "ones/task",
+      "adapter": {
+        "command": "ones/task",
+        "urlArg": null
+      },
+      "name": "task",
+      "domain": "ones.cn",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "ones",
+      "command": "ones/tasks",
+      "adapter": {
+        "command": "ones/tasks",
+        "urlArg": null
+      },
+      "name": "tasks",
+      "domain": "ones.cn",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "ones",
+      "command": "ones/token-info",
+      "adapter": {
+        "command": "ones/token-info",
+        "urlArg": null
+      },
+      "name": "token-info",
+      "domain": "ones.cn",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "ones",
+      "command": "ones/worklog",
+      "adapter": {
+        "command": "ones/worklog",
+        "urlArg": null
+      },
+      "name": "worklog",
+      "domain": "ones.cn",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "pixiv",
+      "command": "pixiv/illusts",
+      "adapter": {
+        "command": "pixiv/illusts",
+        "urlArg": null
+      },
+      "name": "illusts",
+      "domain": "www.pixiv.net",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "pixiv",
+      "command": "pixiv/ranking",
+      "adapter": {
+        "command": "pixiv/ranking",
+        "urlArg": null
+      },
+      "name": "ranking",
+      "domain": "www.pixiv.net",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "pixiv",
+      "command": "pixiv/search",
+      "adapter": {
+        "command": "pixiv/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": "www.pixiv.net",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "pixiv",
+      "command": "pixiv/user",
+      "adapter": {
+        "command": "pixiv/user",
+        "urlArg": null
+      },
+      "name": "user",
+      "domain": "www.pixiv.net",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "powerchina",
+      "command": "powerchina/search",
+      "adapter": {
+        "command": "powerchina/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": "bid.powerchina.cn",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "producthunt",
+      "command": "producthunt/browse",
+      "adapter": {
+        "command": "producthunt/browse",
+        "urlArg": null
+      },
+      "name": "browse",
+      "domain": "www.producthunt.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "producthunt",
+      "command": "producthunt/hot",
+      "adapter": {
+        "command": "producthunt/hot",
+        "urlArg": null
+      },
+      "name": "hot",
+      "domain": "www.producthunt.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "quark",
+      "command": "quark/ls",
+      "adapter": {
+        "command": "quark/ls",
+        "urlArg": null
+      },
+      "name": "ls",
+      "domain": "pan.quark.cn",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "quark",
+      "command": "quark/mkdir",
+      "adapter": {
+        "command": "quark/mkdir",
+        "urlArg": null
+      },
+      "name": "mkdir",
+      "domain": "pan.quark.cn",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "quark",
+      "command": "quark/mv",
+      "adapter": {
+        "command": "quark/mv",
+        "urlArg": null
+      },
+      "name": "mv",
+      "domain": "pan.quark.cn",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "quark",
+      "command": "quark/rename",
+      "adapter": {
+        "command": "quark/rename",
+        "urlArg": null
+      },
+      "name": "rename",
+      "domain": "pan.quark.cn",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "quark",
+      "command": "quark/rm",
+      "adapter": {
+        "command": "quark/rm",
+        "urlArg": null
+      },
+      "name": "rm",
+      "domain": "pan.quark.cn",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "quark",
+      "command": "quark/save",
+      "adapter": {
+        "command": "quark/save",
+        "urlArg": {
+          "name": "url",
+          "positional": true
+        }
+      },
+      "name": "save",
+      "domain": "pan.quark.cn",
+      "browser": true,
+      "acceptsUrl": true
+    },
+    {
+      "site": "quark",
+      "command": "quark/share-tree",
+      "adapter": {
+        "command": "quark/share-tree",
+        "urlArg": {
+          "name": "url",
+          "positional": true
+        }
+      },
+      "name": "share-tree",
+      "domain": "pan.quark.cn",
+      "browser": true,
+      "acceptsUrl": true
+    },
+    {
+      "site": "reddit",
+      "command": "reddit/frontpage",
+      "adapter": {
+        "command": "reddit/frontpage",
+        "urlArg": null
+      },
+      "name": "frontpage",
+      "domain": "reddit.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "reddit",
+      "command": "reddit/hot",
+      "adapter": {
+        "command": "reddit/hot",
+        "urlArg": null
+      },
+      "name": "hot",
+      "domain": "www.reddit.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "reddit",
+      "command": "reddit/popular",
+      "adapter": {
+        "command": "reddit/popular",
+        "urlArg": null
+      },
+      "name": "popular",
+      "domain": "reddit.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "reddit",
+      "command": "reddit/save",
+      "adapter": {
+        "command": "reddit/save",
+        "urlArg": null
+      },
+      "name": "save",
+      "domain": "reddit.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "reddit",
+      "command": "reddit/saved",
+      "adapter": {
+        "command": "reddit/saved",
+        "urlArg": null
+      },
+      "name": "saved",
+      "domain": "reddit.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "reddit",
+      "command": "reddit/search",
+      "adapter": {
+        "command": "reddit/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": "reddit.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "reddit",
+      "command": "reddit/subreddit",
+      "adapter": {
+        "command": "reddit/subreddit",
+        "urlArg": null
+      },
+      "name": "subreddit",
+      "domain": "reddit.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "reddit",
+      "command": "reddit/upvote",
+      "adapter": {
+        "command": "reddit/upvote",
+        "urlArg": null
+      },
+      "name": "upvote",
+      "domain": "reddit.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "reddit",
+      "command": "reddit/upvoted",
+      "adapter": {
+        "command": "reddit/upvoted",
+        "urlArg": null
+      },
+      "name": "upvoted",
+      "domain": "reddit.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "reddit",
+      "command": "reddit/user",
+      "adapter": {
+        "command": "reddit/user",
+        "urlArg": null
+      },
+      "name": "user",
+      "domain": "reddit.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "reddit",
+      "command": "reddit/user-comments",
+      "adapter": {
+        "command": "reddit/user-comments",
+        "urlArg": null
+      },
+      "name": "user-comments",
+      "domain": "reddit.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "reddit",
+      "command": "reddit/user-posts",
+      "adapter": {
+        "command": "reddit/user-posts",
+        "urlArg": null
+      },
+      "name": "user-posts",
+      "domain": "reddit.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "reuters",
+      "command": "reuters/search",
+      "adapter": {
+        "command": "reuters/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": "www.reuters.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "sinablog",
+      "command": "sinablog/hot",
+      "adapter": {
+        "command": "sinablog/hot",
+        "urlArg": null
+      },
+      "name": "hot",
+      "domain": "blog.sina.com.cn",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "sinablog",
+      "command": "sinablog/user",
+      "adapter": {
+        "command": "sinablog/user",
+        "urlArg": null
+      },
+      "name": "user",
+      "domain": "blog.sina.com.cn",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "sinafinance",
+      "command": "sinafinance/rolling-news",
+      "adapter": {
+        "command": "sinafinance/rolling-news",
+        "urlArg": null
+      },
+      "name": "rolling-news",
+      "domain": "finance.sina.com.cn/roll",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "sinafinance",
+      "command": "sinafinance/stock-rank",
+      "adapter": {
+        "command": "sinafinance/stock-rank",
+        "urlArg": null
+      },
+      "name": "stock-rank",
+      "domain": "finance.sina.cn",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "smzdm",
+      "command": "smzdm/search",
+      "adapter": {
+        "command": "smzdm/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": "www.smzdm.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "substack",
+      "command": "substack/feed",
+      "adapter": {
+        "command": "substack/feed",
+        "urlArg": null
+      },
+      "name": "feed",
+      "domain": "substack.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "substack",
+      "command": "substack/publication",
+      "adapter": {
+        "command": "substack/publication",
+        "urlArg": {
+          "name": "url",
+          "positional": true
+        }
+      },
+      "name": "publication",
+      "domain": "substack.com",
+      "browser": true,
+      "acceptsUrl": true
+    },
+    {
+      "site": "taobao",
+      "command": "taobao/add-cart",
+      "adapter": {
+        "command": "taobao/add-cart",
+        "urlArg": null
+      },
+      "name": "add-cart",
+      "domain": "item.taobao.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "taobao",
+      "command": "taobao/cart",
+      "adapter": {
+        "command": "taobao/cart",
+        "urlArg": null
+      },
+      "name": "cart",
+      "domain": "cart.taobao.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "taobao",
+      "command": "taobao/reviews",
+      "adapter": {
+        "command": "taobao/reviews",
+        "urlArg": null
+      },
+      "name": "reviews",
+      "domain": "item.taobao.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "taobao",
+      "command": "taobao/search",
+      "adapter": {
+        "command": "taobao/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": "s.taobao.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "tdx",
+      "command": "tdx/hot-rank",
+      "adapter": {
+        "command": "tdx/hot-rank",
+        "urlArg": null
+      },
+      "name": "hot-rank",
+      "domain": "pul.tdx.com.cn",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "ths",
+      "command": "ths/hot-rank",
+      "adapter": {
+        "command": "ths/hot-rank",
+        "urlArg": null
+      },
+      "name": "hot-rank",
+      "domain": "eq.10jqka.com.cn",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "tieba",
+      "command": "tieba/hot",
+      "adapter": {
+        "command": "tieba/hot",
+        "urlArg": null
+      },
+      "name": "hot",
+      "domain": "tieba.baidu.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "tieba",
+      "command": "tieba/posts",
+      "adapter": {
+        "command": "tieba/posts",
+        "urlArg": null
+      },
+      "name": "posts",
+      "domain": "tieba.baidu.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "tieba",
+      "command": "tieba/search",
+      "adapter": {
+        "command": "tieba/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": "tieba.baidu.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "tiktok",
+      "command": "tiktok/explore",
+      "adapter": {
+        "command": "tiktok/explore",
+        "urlArg": null
+      },
+      "name": "explore",
+      "domain": "www.tiktok.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "tiktok",
+      "command": "tiktok/follow",
+      "adapter": {
+        "command": "tiktok/follow",
+        "urlArg": null
+      },
+      "name": "follow",
+      "domain": "www.tiktok.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "tiktok",
+      "command": "tiktok/following",
+      "adapter": {
+        "command": "tiktok/following",
+        "urlArg": null
+      },
+      "name": "following",
+      "domain": "www.tiktok.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "tiktok",
+      "command": "tiktok/friends",
+      "adapter": {
+        "command": "tiktok/friends",
+        "urlArg": null
+      },
+      "name": "friends",
+      "domain": "www.tiktok.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "tiktok",
+      "command": "tiktok/live",
+      "adapter": {
+        "command": "tiktok/live",
+        "urlArg": null
+      },
+      "name": "live",
+      "domain": "www.tiktok.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "tiktok",
+      "command": "tiktok/notifications",
+      "adapter": {
+        "command": "tiktok/notifications",
+        "urlArg": null
+      },
+      "name": "notifications",
+      "domain": "www.tiktok.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "tiktok",
+      "command": "tiktok/profile",
+      "adapter": {
+        "command": "tiktok/profile",
+        "urlArg": null
+      },
+      "name": "profile",
+      "domain": "www.tiktok.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "tiktok",
+      "command": "tiktok/save",
+      "adapter": {
+        "command": "tiktok/save",
+        "urlArg": {
+          "name": "url",
+          "positional": true
+        }
+      },
+      "name": "save",
+      "domain": "www.tiktok.com",
+      "browser": true,
+      "acceptsUrl": true
+    },
+    {
+      "site": "tiktok",
+      "command": "tiktok/search",
+      "adapter": {
+        "command": "tiktok/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": "www.tiktok.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "tiktok",
+      "command": "tiktok/unfollow",
+      "adapter": {
+        "command": "tiktok/unfollow",
+        "urlArg": null
+      },
+      "name": "unfollow",
+      "domain": "www.tiktok.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "tiktok",
+      "command": "tiktok/unsave",
+      "adapter": {
+        "command": "tiktok/unsave",
+        "urlArg": {
+          "name": "url",
+          "positional": true
+        }
+      },
+      "name": "unsave",
+      "domain": "www.tiktok.com",
+      "browser": true,
+      "acceptsUrl": true
+    },
+    {
+      "site": "tiktok",
+      "command": "tiktok/user",
+      "adapter": {
+        "command": "tiktok/user",
+        "urlArg": null
+      },
+      "name": "user",
+      "domain": "www.tiktok.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "toutiao",
+      "command": "toutiao/articles",
+      "adapter": {
+        "command": "toutiao/articles",
+        "urlArg": null
+      },
+      "name": "articles",
+      "domain": "mp.toutiao.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "twitter",
+      "command": "twitter/accept",
+      "adapter": {
+        "command": "twitter/accept",
+        "urlArg": null
+      },
+      "name": "accept",
+      "domain": "x.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "twitter",
+      "command": "twitter/block",
+      "adapter": {
+        "command": "twitter/block",
+        "urlArg": null
+      },
+      "name": "block",
+      "domain": "x.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "twitter",
+      "command": "twitter/bookmark",
+      "adapter": {
+        "command": "twitter/bookmark",
+        "urlArg": {
+          "name": "url",
+          "positional": true
+        }
+      },
+      "name": "bookmark",
+      "domain": "x.com",
+      "browser": true,
+      "acceptsUrl": true
+    },
+    {
+      "site": "twitter",
+      "command": "twitter/bookmarks",
+      "adapter": {
+        "command": "twitter/bookmarks",
+        "urlArg": null
+      },
+      "name": "bookmarks",
+      "domain": "x.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "twitter",
+      "command": "twitter/delete",
+      "adapter": {
+        "command": "twitter/delete",
+        "urlArg": {
+          "name": "url",
+          "positional": true
+        }
+      },
+      "name": "delete",
+      "domain": "x.com",
+      "browser": true,
+      "acceptsUrl": true
+    },
+    {
+      "site": "twitter",
+      "command": "twitter/follow",
+      "adapter": {
+        "command": "twitter/follow",
+        "urlArg": null
+      },
+      "name": "follow",
+      "domain": "x.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "twitter",
+      "command": "twitter/followers",
+      "adapter": {
+        "command": "twitter/followers",
+        "urlArg": null
+      },
+      "name": "followers",
+      "domain": "x.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "twitter",
+      "command": "twitter/following",
+      "adapter": {
+        "command": "twitter/following",
+        "urlArg": null
+      },
+      "name": "following",
+      "domain": "x.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "twitter",
+      "command": "twitter/hide-reply",
+      "adapter": {
+        "command": "twitter/hide-reply",
+        "urlArg": {
+          "name": "url",
+          "positional": true
+        }
+      },
+      "name": "hide-reply",
+      "domain": "x.com",
+      "browser": true,
+      "acceptsUrl": true
+    },
+    {
+      "site": "twitter",
+      "command": "twitter/likes",
+      "adapter": {
+        "command": "twitter/likes",
+        "urlArg": null
+      },
+      "name": "likes",
+      "domain": "x.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "twitter",
+      "command": "twitter/list-add",
+      "adapter": {
+        "command": "twitter/list-add",
+        "urlArg": null
+      },
+      "name": "list-add",
+      "domain": "x.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "twitter",
+      "command": "twitter/list-remove",
+      "adapter": {
+        "command": "twitter/list-remove",
+        "urlArg": null
+      },
+      "name": "list-remove",
+      "domain": "x.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "twitter",
+      "command": "twitter/list-tweets",
+      "adapter": {
+        "command": "twitter/list-tweets",
+        "urlArg": null
+      },
+      "name": "list-tweets",
+      "domain": "x.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "twitter",
+      "command": "twitter/lists",
+      "adapter": {
+        "command": "twitter/lists",
+        "urlArg": null
+      },
+      "name": "lists",
+      "domain": "x.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "twitter",
+      "command": "twitter/notifications",
+      "adapter": {
+        "command": "twitter/notifications",
+        "urlArg": null
+      },
+      "name": "notifications",
+      "domain": "x.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "twitter",
+      "command": "twitter/post",
+      "adapter": {
+        "command": "twitter/post",
+        "urlArg": null
+      },
+      "name": "post",
+      "domain": "x.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "twitter",
+      "command": "twitter/profile",
+      "adapter": {
+        "command": "twitter/profile",
+        "urlArg": null
+      },
+      "name": "profile",
+      "domain": "x.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "twitter",
+      "command": "twitter/reply",
+      "adapter": {
+        "command": "twitter/reply",
+        "urlArg": {
+          "name": "url",
+          "positional": true
+        }
+      },
+      "name": "reply",
+      "domain": "x.com",
+      "browser": true,
+      "acceptsUrl": true
+    },
+    {
+      "site": "twitter",
+      "command": "twitter/reply-dm",
+      "adapter": {
+        "command": "twitter/reply-dm",
+        "urlArg": null
+      },
+      "name": "reply-dm",
+      "domain": "x.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "twitter",
+      "command": "twitter/search",
+      "adapter": {
+        "command": "twitter/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": "x.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "twitter",
+      "command": "twitter/thread",
+      "adapter": {
+        "command": "twitter/thread",
+        "urlArg": null
+      },
+      "name": "thread",
+      "domain": "x.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "twitter",
+      "command": "twitter/timeline",
+      "adapter": {
+        "command": "twitter/timeline",
+        "urlArg": null
+      },
+      "name": "timeline",
+      "domain": "x.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "twitter",
+      "command": "twitter/trending",
+      "adapter": {
+        "command": "twitter/trending",
+        "urlArg": null
+      },
+      "name": "trending",
+      "domain": "x.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "twitter",
+      "command": "twitter/tweets",
+      "adapter": {
+        "command": "twitter/tweets",
+        "urlArg": null
+      },
+      "name": "tweets",
+      "domain": "x.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "twitter",
+      "command": "twitter/unblock",
+      "adapter": {
+        "command": "twitter/unblock",
+        "urlArg": null
+      },
+      "name": "unblock",
+      "domain": "x.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "twitter",
+      "command": "twitter/unbookmark",
+      "adapter": {
+        "command": "twitter/unbookmark",
+        "urlArg": {
+          "name": "url",
+          "positional": true
+        }
+      },
+      "name": "unbookmark",
+      "domain": "x.com",
+      "browser": true,
+      "acceptsUrl": true
+    },
+    {
+      "site": "twitter",
+      "command": "twitter/unfollow",
+      "adapter": {
+        "command": "twitter/unfollow",
+        "urlArg": null
+      },
+      "name": "unfollow",
+      "domain": "x.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "uiverse",
+      "command": "uiverse/code",
+      "adapter": {
+        "command": "uiverse/code",
+        "urlArg": {
+          "name": "input",
+          "positional": true
+        }
+      },
+      "name": "code",
+      "domain": "uiverse.io",
+      "browser": true,
+      "acceptsUrl": true
+    },
+    {
+      "site": "uiverse",
+      "command": "uiverse/preview",
+      "adapter": {
+        "command": "uiverse/preview",
+        "urlArg": {
+          "name": "input",
+          "positional": true
+        }
+      },
+      "name": "preview",
+      "domain": "uiverse.io",
+      "browser": true,
+      "acceptsUrl": true
+    },
+    {
+      "site": "v2ex",
+      "command": "v2ex/daily",
+      "adapter": {
+        "command": "v2ex/daily",
+        "urlArg": null
+      },
+      "name": "daily",
+      "domain": "www.v2ex.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "v2ex",
+      "command": "v2ex/me",
+      "adapter": {
+        "command": "v2ex/me",
+        "urlArg": null
+      },
+      "name": "me",
+      "domain": "www.v2ex.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "v2ex",
+      "command": "v2ex/notifications",
+      "adapter": {
+        "command": "v2ex/notifications",
+        "urlArg": null
+      },
+      "name": "notifications",
+      "domain": "www.v2ex.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "wanfang",
+      "command": "wanfang/search",
+      "adapter": {
+        "command": "wanfang/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": "s.wanfangdata.com.cn",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "weibo",
+      "command": "weibo/feed",
+      "adapter": {
+        "command": "weibo/feed",
+        "urlArg": null
+      },
+      "name": "feed",
+      "domain": "weibo.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "weibo",
+      "command": "weibo/hot",
+      "adapter": {
+        "command": "weibo/hot",
+        "urlArg": null
+      },
+      "name": "hot",
+      "domain": "weibo.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "weibo",
+      "command": "weibo/me",
+      "adapter": {
+        "command": "weibo/me",
+        "urlArg": null
+      },
+      "name": "me",
+      "domain": "weibo.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "weibo",
+      "command": "weibo/post",
+      "adapter": {
+        "command": "weibo/post",
+        "urlArg": null
+      },
+      "name": "post",
+      "domain": "weibo.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "weibo",
+      "command": "weibo/search",
+      "adapter": {
+        "command": "weibo/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": "weibo.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "weibo",
+      "command": "weibo/user",
+      "adapter": {
+        "command": "weibo/user",
+        "urlArg": null
+      },
+      "name": "user",
+      "domain": "weibo.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "weixin",
+      "command": "weixin/create-draft",
+      "adapter": {
+        "command": "weixin/create-draft",
+        "urlArg": null
+      },
+      "name": "create-draft",
+      "domain": "mp.weixin.qq.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "weixin",
+      "command": "weixin/drafts",
+      "adapter": {
+        "command": "weixin/drafts",
+        "urlArg": null
+      },
+      "name": "drafts",
+      "domain": "mp.weixin.qq.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "weread",
+      "command": "weread/ai-outline",
+      "adapter": {
+        "command": "weread/ai-outline",
+        "urlArg": null
+      },
+      "name": "ai-outline",
+      "domain": "weread.qq.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "weread",
+      "command": "weread/book",
+      "adapter": {
+        "command": "weread/book",
+        "urlArg": null
+      },
+      "name": "book",
+      "domain": "weread.qq.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "weread",
+      "command": "weread/highlights",
+      "adapter": {
+        "command": "weread/highlights",
+        "urlArg": null
+      },
+      "name": "highlights",
+      "domain": "weread.qq.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "weread",
+      "command": "weread/notebooks",
+      "adapter": {
+        "command": "weread/notebooks",
+        "urlArg": null
+      },
+      "name": "notebooks",
+      "domain": "weread.qq.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "weread",
+      "command": "weread/notes",
+      "adapter": {
+        "command": "weread/notes",
+        "urlArg": null
+      },
+      "name": "notes",
+      "domain": "weread.qq.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "weread",
+      "command": "weread/shelf",
+      "adapter": {
+        "command": "weread/shelf",
+        "urlArg": null
+      },
+      "name": "shelf",
+      "domain": "weread.qq.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "xianyu",
+      "command": "xianyu/chat",
+      "adapter": {
+        "command": "xianyu/chat",
+        "urlArg": null
+      },
+      "name": "chat",
+      "domain": "www.goofish.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "xianyu",
+      "command": "xianyu/search",
+      "adapter": {
+        "command": "xianyu/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": "www.goofish.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "xiaoe",
+      "command": "xiaoe/catalog",
+      "adapter": {
+        "command": "xiaoe/catalog",
+        "urlArg": {
+          "name": "url",
+          "positional": true
+        }
+      },
+      "name": "catalog",
+      "domain": "h5.xet.citv.cn",
+      "browser": true,
+      "acceptsUrl": true
+    },
+    {
+      "site": "xiaoe",
+      "command": "xiaoe/courses",
+      "adapter": {
+        "command": "xiaoe/courses",
+        "urlArg": null
+      },
+      "name": "courses",
+      "domain": "study.xiaoe-tech.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "xiaoe",
+      "command": "xiaoe/play-url",
+      "adapter": {
+        "command": "xiaoe/play-url",
+        "urlArg": {
+          "name": "url",
+          "positional": true
+        }
+      },
+      "name": "play-url",
+      "domain": "h5.xet.citv.cn",
+      "browser": true,
+      "acceptsUrl": true
+    },
+    {
+      "site": "xiaohongshu",
+      "command": "xiaohongshu/creator-note-detail",
+      "adapter": {
+        "command": "xiaohongshu/creator-note-detail",
+        "urlArg": null
+      },
+      "name": "creator-note-detail",
+      "domain": "creator.xiaohongshu.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "xiaohongshu",
+      "command": "xiaohongshu/creator-notes",
+      "adapter": {
+        "command": "xiaohongshu/creator-notes",
+        "urlArg": null
+      },
+      "name": "creator-notes",
+      "domain": "creator.xiaohongshu.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "xiaohongshu",
+      "command": "xiaohongshu/creator-notes-summary",
+      "adapter": {
+        "command": "xiaohongshu/creator-notes-summary",
+        "urlArg": null
+      },
+      "name": "creator-notes-summary",
+      "domain": "creator.xiaohongshu.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "xiaohongshu",
+      "command": "xiaohongshu/creator-profile",
+      "adapter": {
+        "command": "xiaohongshu/creator-profile",
+        "urlArg": null
+      },
+      "name": "creator-profile",
+      "domain": "creator.xiaohongshu.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "xiaohongshu",
+      "command": "xiaohongshu/creator-stats",
+      "adapter": {
+        "command": "xiaohongshu/creator-stats",
+        "urlArg": null
+      },
+      "name": "creator-stats",
+      "domain": "creator.xiaohongshu.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "xiaohongshu",
+      "command": "xiaohongshu/feed",
+      "adapter": {
+        "command": "xiaohongshu/feed",
+        "urlArg": null
+      },
+      "name": "feed",
+      "domain": "www.xiaohongshu.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "xiaohongshu",
+      "command": "xiaohongshu/note",
+      "adapter": {
+        "command": "xiaohongshu/note",
+        "urlArg": null
+      },
+      "name": "note",
+      "domain": "www.xiaohongshu.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "xiaohongshu",
+      "command": "xiaohongshu/notifications",
+      "adapter": {
+        "command": "xiaohongshu/notifications",
+        "urlArg": null
+      },
+      "name": "notifications",
+      "domain": "www.xiaohongshu.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "xiaohongshu",
+      "command": "xiaohongshu/publish",
+      "adapter": {
+        "command": "xiaohongshu/publish",
+        "urlArg": null
+      },
+      "name": "publish",
+      "domain": "creator.xiaohongshu.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "xiaohongshu",
+      "command": "xiaohongshu/search",
+      "adapter": {
+        "command": "xiaohongshu/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": "www.xiaohongshu.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "xiaohongshu",
+      "command": "xiaohongshu/user",
+      "adapter": {
+        "command": "xiaohongshu/user",
+        "urlArg": null
+      },
+      "name": "user",
+      "domain": "www.xiaohongshu.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "xueqiu",
+      "command": "xueqiu/earnings-date",
+      "adapter": {
+        "command": "xueqiu/earnings-date",
+        "urlArg": null
+      },
+      "name": "earnings-date",
+      "domain": "xueqiu.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "xueqiu",
+      "command": "xueqiu/feed",
+      "adapter": {
+        "command": "xueqiu/feed",
+        "urlArg": null
+      },
+      "name": "feed",
+      "domain": "xueqiu.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "xueqiu",
+      "command": "xueqiu/fund-holdings",
+      "adapter": {
+        "command": "xueqiu/fund-holdings",
+        "urlArg": null
+      },
+      "name": "fund-holdings",
+      "domain": "danjuanfunds.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "xueqiu",
+      "command": "xueqiu/fund-snapshot",
+      "adapter": {
+        "command": "xueqiu/fund-snapshot",
+        "urlArg": null
+      },
+      "name": "fund-snapshot",
+      "domain": "danjuanfunds.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "xueqiu",
+      "command": "xueqiu/groups",
+      "adapter": {
+        "command": "xueqiu/groups",
+        "urlArg": null
+      },
+      "name": "groups",
+      "domain": "xueqiu.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "xueqiu",
+      "command": "xueqiu/hot",
+      "adapter": {
+        "command": "xueqiu/hot",
+        "urlArg": null
+      },
+      "name": "hot",
+      "domain": "xueqiu.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "xueqiu",
+      "command": "xueqiu/hot-stock",
+      "adapter": {
+        "command": "xueqiu/hot-stock",
+        "urlArg": null
+      },
+      "name": "hot-stock",
+      "domain": "xueqiu.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "xueqiu",
+      "command": "xueqiu/kline",
+      "adapter": {
+        "command": "xueqiu/kline",
+        "urlArg": null
+      },
+      "name": "kline",
+      "domain": "xueqiu.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "xueqiu",
+      "command": "xueqiu/search",
+      "adapter": {
+        "command": "xueqiu/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": "xueqiu.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "xueqiu",
+      "command": "xueqiu/stock",
+      "adapter": {
+        "command": "xueqiu/stock",
+        "urlArg": null
+      },
+      "name": "stock",
+      "domain": "xueqiu.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "xueqiu",
+      "command": "xueqiu/watchlist",
+      "adapter": {
+        "command": "xueqiu/watchlist",
+        "urlArg": null
+      },
+      "name": "watchlist",
+      "domain": "xueqiu.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "yahoo-finance",
+      "command": "yahoo-finance/quote",
+      "adapter": {
+        "command": "yahoo-finance/quote",
+        "urlArg": null
+      },
+      "name": "quote",
+      "domain": "finance.yahoo.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "yollomi",
+      "command": "yollomi/background",
+      "adapter": {
+        "command": "yollomi/background",
+        "urlArg": null
+      },
+      "name": "background",
+      "domain": "yollomi.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "yollomi",
+      "command": "yollomi/edit",
+      "adapter": {
+        "command": "yollomi/edit",
+        "urlArg": null
+      },
+      "name": "edit",
+      "domain": "yollomi.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "yollomi",
+      "command": "yollomi/face-swap",
+      "adapter": {
+        "command": "yollomi/face-swap",
+        "urlArg": null
+      },
+      "name": "face-swap",
+      "domain": "yollomi.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "yollomi",
+      "command": "yollomi/generate",
+      "adapter": {
+        "command": "yollomi/generate",
+        "urlArg": null
+      },
+      "name": "generate",
+      "domain": "yollomi.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "yollomi",
+      "command": "yollomi/object-remover",
+      "adapter": {
+        "command": "yollomi/object-remover",
+        "urlArg": null
+      },
+      "name": "object-remover",
+      "domain": "yollomi.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "yollomi",
+      "command": "yollomi/remove-bg",
+      "adapter": {
+        "command": "yollomi/remove-bg",
+        "urlArg": null
+      },
+      "name": "remove-bg",
+      "domain": "yollomi.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "yollomi",
+      "command": "yollomi/restore",
+      "adapter": {
+        "command": "yollomi/restore",
+        "urlArg": null
+      },
+      "name": "restore",
+      "domain": "yollomi.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "yollomi",
+      "command": "yollomi/try-on",
+      "adapter": {
+        "command": "yollomi/try-on",
+        "urlArg": null
+      },
+      "name": "try-on",
+      "domain": "yollomi.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "yollomi",
+      "command": "yollomi/upload",
+      "adapter": {
+        "command": "yollomi/upload",
+        "urlArg": null
+      },
+      "name": "upload",
+      "domain": "yollomi.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "yollomi",
+      "command": "yollomi/upscale",
+      "adapter": {
+        "command": "yollomi/upscale",
+        "urlArg": null
+      },
+      "name": "upscale",
+      "domain": "yollomi.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "youtube",
+      "command": "youtube/channel",
+      "adapter": {
+        "command": "youtube/channel",
+        "urlArg": null
+      },
+      "name": "channel",
+      "domain": "www.youtube.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "youtube",
+      "command": "youtube/feed",
+      "adapter": {
+        "command": "youtube/feed",
+        "urlArg": null
+      },
+      "name": "feed",
+      "domain": "www.youtube.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "youtube",
+      "command": "youtube/history",
+      "adapter": {
+        "command": "youtube/history",
+        "urlArg": null
+      },
+      "name": "history",
+      "domain": "www.youtube.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "youtube",
+      "command": "youtube/playlist",
+      "adapter": {
+        "command": "youtube/playlist",
+        "urlArg": null
+      },
+      "name": "playlist",
+      "domain": "www.youtube.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "youtube",
+      "command": "youtube/search",
+      "adapter": {
+        "command": "youtube/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": "www.youtube.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "youtube",
+      "command": "youtube/subscriptions",
+      "adapter": {
+        "command": "youtube/subscriptions",
+        "urlArg": null
+      },
+      "name": "subscriptions",
+      "domain": "www.youtube.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "youtube",
+      "command": "youtube/transcript",
+      "adapter": {
+        "command": "youtube/transcript",
+        "urlArg": {
+          "name": "url",
+          "positional": true
+        }
+      },
+      "name": "transcript",
+      "domain": "www.youtube.com",
+      "browser": true,
+      "acceptsUrl": true
+    },
+    {
+      "site": "youtube",
+      "command": "youtube/watch-later",
+      "adapter": {
+        "command": "youtube/watch-later",
+        "urlArg": null
+      },
+      "name": "watch-later",
+      "domain": "www.youtube.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "yuanbao",
+      "command": "yuanbao/ask",
+      "adapter": {
+        "command": "yuanbao/ask",
+        "urlArg": null
+      },
+      "name": "ask",
+      "domain": "yuanbao.tencent.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "yuanbao",
+      "command": "yuanbao/new",
+      "adapter": {
+        "command": "yuanbao/new",
+        "urlArg": null
+      },
+      "name": "new",
+      "domain": "yuanbao.tencent.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "zhihu",
+      "command": "zhihu/answer",
+      "adapter": {
+        "command": "zhihu/answer",
+        "urlArg": null
+      },
+      "name": "answer",
+      "domain": "www.zhihu.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "zhihu",
+      "command": "zhihu/favorite",
+      "adapter": {
+        "command": "zhihu/favorite",
+        "urlArg": null
+      },
+      "name": "favorite",
+      "domain": "zhihu.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "zhihu",
+      "command": "zhihu/follow",
+      "adapter": {
+        "command": "zhihu/follow",
+        "urlArg": null
+      },
+      "name": "follow",
+      "domain": "www.zhihu.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "zhihu",
+      "command": "zhihu/hot",
+      "adapter": {
+        "command": "zhihu/hot",
+        "urlArg": null
+      },
+      "name": "hot",
+      "domain": "www.zhihu.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "zhihu",
+      "command": "zhihu/question",
+      "adapter": {
+        "command": "zhihu/question",
+        "urlArg": null
+      },
+      "name": "question",
+      "domain": "www.zhihu.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "zhihu",
+      "command": "zhihu/search",
+      "adapter": {
+        "command": "zhihu/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": "www.zhihu.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "zsxq",
+      "command": "zsxq/dynamics",
+      "adapter": {
+        "command": "zsxq/dynamics",
+        "urlArg": null
+      },
+      "name": "dynamics",
+      "domain": "wx.zsxq.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "zsxq",
+      "command": "zsxq/groups",
+      "adapter": {
+        "command": "zsxq/groups",
+        "urlArg": null
+      },
+      "name": "groups",
+      "domain": "wx.zsxq.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "zsxq",
+      "command": "zsxq/search",
+      "adapter": {
+        "command": "zsxq/search",
+        "urlArg": null
+      },
+      "name": "search",
+      "domain": "wx.zsxq.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "zsxq",
+      "command": "zsxq/topic",
+      "adapter": {
+        "command": "zsxq/topic",
+        "urlArg": null
+      },
+      "name": "topic",
+      "domain": "wx.zsxq.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "zsxq",
+      "command": "zsxq/topics",
+      "adapter": {
+        "command": "zsxq/topics",
+        "urlArg": null
+      },
+      "name": "topics",
+      "domain": "wx.zsxq.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "1688",
+      "command": "1688/assets",
+      "adapter": {
+        "command": "1688/assets",
+        "urlArg": {
+          "name": "input",
+          "positional": true
+        }
+      },
+      "name": "assets",
+      "domain": "www.1688.com",
+      "browser": true,
+      "acceptsUrl": true
+    },
+    {
+      "site": "1688",
+      "command": "1688/download",
+      "adapter": {
+        "command": "1688/download",
+        "urlArg": {
+          "name": "input",
+          "positional": true
+        }
+      },
+      "name": "download",
+      "domain": "www.1688.com",
+      "browser": true,
+      "acceptsUrl": true
+    },
+    {
+      "site": "bilibili",
+      "command": "bilibili/comments",
+      "adapter": {
+        "command": "bilibili/comments",
+        "urlArg": null
+      },
+      "name": "comments",
+      "domain": "www.bilibili.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "bilibili",
+      "command": "bilibili/download",
+      "adapter": {
+        "command": "bilibili/download",
+        "urlArg": null
+      },
+      "name": "download",
+      "domain": "www.bilibili.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "douban",
+      "command": "douban/download",
+      "adapter": {
+        "command": "douban/download",
+        "urlArg": null
+      },
+      "name": "download",
+      "domain": "movie.douban.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "hupu",
+      "command": "hupu/like",
+      "adapter": {
+        "command": "hupu/like",
+        "urlArg": null
+      },
+      "name": "like",
+      "domain": "bbs.hupu.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "hupu",
+      "command": "hupu/unlike",
+      "adapter": {
+        "command": "hupu/unlike",
+        "urlArg": null
+      },
+      "name": "unlike",
+      "domain": "bbs.hupu.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "instagram",
+      "command": "instagram/comment",
+      "adapter": {
+        "command": "instagram/comment",
+        "urlArg": null
+      },
+      "name": "comment",
+      "domain": "www.instagram.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "instagram",
+      "command": "instagram/download",
+      "adapter": {
+        "command": "instagram/download",
+        "urlArg": {
+          "name": "url",
+          "positional": true
+        }
+      },
+      "name": "download",
+      "domain": "www.instagram.com",
+      "browser": true,
+      "acceptsUrl": true
+    },
+    {
+      "site": "instagram",
+      "command": "instagram/like",
+      "adapter": {
+        "command": "instagram/like",
+        "urlArg": null
+      },
+      "name": "like",
+      "domain": "www.instagram.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "instagram",
+      "command": "instagram/unlike",
+      "adapter": {
+        "command": "instagram/unlike",
+        "urlArg": null
+      },
+      "name": "unlike",
+      "domain": "www.instagram.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "jike",
+      "command": "jike/comment",
+      "adapter": {
+        "command": "jike/comment",
+        "urlArg": null
+      },
+      "name": "comment",
+      "domain": "web.okjike.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "jike",
+      "command": "jike/like",
+      "adapter": {
+        "command": "jike/like",
+        "urlArg": null
+      },
+      "name": "like",
+      "domain": "web.okjike.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "pixiv",
+      "command": "pixiv/download",
+      "adapter": {
+        "command": "pixiv/download",
+        "urlArg": null
+      },
+      "name": "download",
+      "domain": "www.pixiv.net",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "reddit",
+      "command": "reddit/comment",
+      "adapter": {
+        "command": "reddit/comment",
+        "urlArg": null
+      },
+      "name": "comment",
+      "domain": "reddit.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "reddit",
+      "command": "reddit/subscribe",
+      "adapter": {
+        "command": "reddit/subscribe",
+        "urlArg": null
+      },
+      "name": "subscribe",
+      "domain": "reddit.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "tiktok",
+      "command": "tiktok/comment",
+      "adapter": {
+        "command": "tiktok/comment",
+        "urlArg": {
+          "name": "url",
+          "positional": true
+        }
+      },
+      "name": "comment",
+      "domain": "www.tiktok.com",
+      "browser": true,
+      "acceptsUrl": true
+    },
+    {
+      "site": "tiktok",
+      "command": "tiktok/like",
+      "adapter": {
+        "command": "tiktok/like",
+        "urlArg": {
+          "name": "url",
+          "positional": true
+        }
+      },
+      "name": "like",
+      "domain": "www.tiktok.com",
+      "browser": true,
+      "acceptsUrl": true
+    },
+    {
+      "site": "tiktok",
+      "command": "tiktok/unlike",
+      "adapter": {
+        "command": "tiktok/unlike",
+        "urlArg": {
+          "name": "url",
+          "positional": true
+        }
+      },
+      "name": "unlike",
+      "domain": "www.tiktok.com",
+      "browser": true,
+      "acceptsUrl": true
+    },
+    {
+      "site": "twitter",
+      "command": "twitter/download",
+      "adapter": {
+        "command": "twitter/download",
+        "urlArg": null
+      },
+      "name": "download",
+      "domain": "x.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "twitter",
+      "command": "twitter/like",
+      "adapter": {
+        "command": "twitter/like",
+        "urlArg": {
+          "name": "url",
+          "positional": true
+        }
+      },
+      "name": "like",
+      "domain": "x.com",
+      "browser": true,
+      "acceptsUrl": true
+    },
+    {
+      "site": "weibo",
+      "command": "weibo/comments",
+      "adapter": {
+        "command": "weibo/comments",
+        "urlArg": null
+      },
+      "name": "comments",
+      "domain": "weibo.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "weixin",
+      "command": "weixin/download",
+      "adapter": {
+        "command": "weixin/download",
+        "urlArg": {
+          "name": "url",
+          "positional": false
+        }
+      },
+      "name": "download",
+      "domain": "mp.weixin.qq.com",
+      "browser": true,
+      "acceptsUrl": true
+    },
+    {
+      "site": "xiaohongshu",
+      "command": "xiaohongshu/comments",
+      "adapter": {
+        "command": "xiaohongshu/comments",
+        "urlArg": null
+      },
+      "name": "comments",
+      "domain": "www.xiaohongshu.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "xiaohongshu",
+      "command": "xiaohongshu/download",
+      "adapter": {
+        "command": "xiaohongshu/download",
+        "urlArg": null
+      },
+      "name": "download",
+      "domain": "www.xiaohongshu.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "xueqiu",
+      "command": "xueqiu/comments",
+      "adapter": {
+        "command": "xueqiu/comments",
+        "urlArg": null
+      },
+      "name": "comments",
+      "domain": "xueqiu.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "youtube",
+      "command": "youtube/comments",
+      "adapter": {
+        "command": "youtube/comments",
+        "urlArg": {
+          "name": "url",
+          "positional": true
+        }
+      },
+      "name": "comments",
+      "domain": "www.youtube.com",
+      "browser": true,
+      "acceptsUrl": true
+    },
+    {
+      "site": "youtube",
+      "command": "youtube/like",
+      "adapter": {
+        "command": "youtube/like",
+        "urlArg": {
+          "name": "url",
+          "positional": true
+        }
+      },
+      "name": "like",
+      "domain": "www.youtube.com",
+      "browser": true,
+      "acceptsUrl": true
+    },
+    {
+      "site": "youtube",
+      "command": "youtube/subscribe",
+      "adapter": {
+        "command": "youtube/subscribe",
+        "urlArg": null
+      },
+      "name": "subscribe",
+      "domain": "www.youtube.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "youtube",
+      "command": "youtube/unlike",
+      "adapter": {
+        "command": "youtube/unlike",
+        "urlArg": {
+          "name": "url",
+          "positional": true
+        }
+      },
+      "name": "unlike",
+      "domain": "www.youtube.com",
+      "browser": true,
+      "acceptsUrl": true
+    },
+    {
+      "site": "youtube",
+      "command": "youtube/unsubscribe",
+      "adapter": {
+        "command": "youtube/unsubscribe",
+        "urlArg": null
+      },
+      "name": "unsubscribe",
+      "domain": "www.youtube.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "zhihu",
+      "command": "zhihu/comment",
+      "adapter": {
+        "command": "zhihu/comment",
+        "urlArg": null
+      },
+      "name": "comment",
+      "domain": "zhihu.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "zhihu",
+      "command": "zhihu/download",
+      "adapter": {
+        "command": "zhihu/download",
+        "urlArg": {
+          "name": "url",
+          "positional": false
+        }
+      },
+      "name": "download",
+      "domain": "zhuanlan.zhihu.com",
+      "browser": true,
+      "acceptsUrl": true
+    },
+    {
+      "site": "zhihu",
+      "command": "zhihu/like",
+      "adapter": {
+        "command": "zhihu/like",
+        "urlArg": null
+      },
+      "name": "like",
+      "domain": "zhihu.com",
+      "browser": true,
+      "acceptsUrl": false
+    },
+    {
+      "site": "web",
+      "command": "web/read",
+      "adapter": {
+        "command": "web/read",
+        "urlArg": {
+          "name": "url",
+          "positional": false
+        }
+      },
+      "name": "read",
+      "domain": null,
+      "browser": true,
+      "acceptsUrl": true
+    }
+  ]
 }

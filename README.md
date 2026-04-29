@@ -13,7 +13,7 @@ Unified web fetching, scraping, screenshot, PDF, extraction, and authorized medi
 | **Scrapling** | Fast static scraping, no JS needed | Installed |
 | **Playwright** | JS-heavy pages, form fills, screenshots, PDFs | Installed |
 | **browser-use** | Autonomous multi-step tasks (AI-driven) | Installed |
-| **OpenCLI** | Known-site adapters, zero runtime tokens | Not installed (pip wheel issue) |
+| **OpenCLI** | Known-site adapters, zero runtime tokens | Installed with this package via `@jackwener/opencli` |
 | **BeautifulSoup (bs4)** | Lightweight HTML parsing after fetch — element/link/text extraction | Installed |
 | **yt-dlp** | Download public or authorized video/audio media for offline analysis | Optional, checked by preflight |
 
@@ -45,6 +45,12 @@ webfetch clear-cache       # [--domain <domain>]
 webfetch status            # Current status
 webfetch preflight         # Check all tools installed
 ```
+
+## Installation Notes
+
+Ultimate Web Fetch installs OpenCLI as an npm dependency. A global `opencli`
+binary is not required; the CLI resolves the bundled `@jackwener/opencli`
+package first and falls back to `OPENCLI_BIN` or `opencli` when needed.
 
 ### fetch flags
 
