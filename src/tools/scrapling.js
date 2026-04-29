@@ -1,10 +1,7 @@
 'use strict';
 
-const { execFile } = require('child_process');
-const { promisify } = require('util');
-const execFileAsync = promisify(execFile);
+const { runPython } = require('./command-resolver');
 
-const PYTHON = '/opt/homebrew/bin/python3.11';
 const TIMEOUT_MS = 30000;
 
 const FETCH_SCRIPT = `
@@ -33,7 +30,7 @@ except Exception as e:
 async function runScrapling(url, goal, options = {}) {
   const timeout = options.timeout || TIMEOUT_MS;
   try {
-    const { stdout } = await execFileAsync(PYTHON, ['-c', FETCH_SCRIPT, url], {
+    const { stdout } = await runPython('SCRAPLING_PYTHON', ['-c', FETCH_SCRIPT, url], {
       timeout,
       maxBuffer: 10 * 1024 * 1024,
     });
@@ -55,10 +52,15 @@ async function runScrapling(url, goal, options = {}) {
 
 async function checkInstalled() {
   try {
-    const { stdout } = await execFileAsync(PYTHON, ['-c', 'import scrapling; print(scrapling.__version__)'], { timeout: 5000 });
-    return { installed: true, version: stdout.trim() };
-  } catch {
-    return { installed: false };
+    const { stdout, python, source } = await runPython('SCRAPLING_PYTHON', ['-c', 'import scrapling; print(scrapling.__version__)'], { timeout: 5000 });
+    return { installed: true, version: stdout.trim(), python, source };
+  } catch (err) {
+    return {
+      installed: false,
+      python: null,
+      install: 'python -m pip install scrapling',
+      error: err.message,
+    };
   }
 }
 

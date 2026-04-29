@@ -2,6 +2,8 @@
 
 const { chromium } = require('playwright');
 const { resolveBrowserRequest, assertLaneReady } = require('../browser-route');
+const { dataDir } = require('../paths');
+const fs = require('fs');
 
 const TIMEOUT_MS = 60000;
 const AUTH_SIGNALS = /\b(login|auth|sign.?in|session|my account|as me|authenticated|logged.?in|password|credential)\b/i;
@@ -88,16 +90,18 @@ async function runPlaywright(url, goal, options = {}) {
 
     let screenshotPath = null;
     if (options.screenshot) {
-      const screenshotDir = require('path').join(__dirname, '..', '..', 'data');
+      const screenshotDir = dataDir();
       const fname = `screenshot-${Date.now()}.png`;
-      screenshotPath = require('path').join(screenshotDir, fname);
+      screenshotPath = options.screenshotPath || require('path').join(screenshotDir, fname);
+      fs.mkdirSync(require('path').dirname(screenshotPath), { recursive: true });
       await page.screenshot({ path: screenshotPath, fullPage: options.fullPage || false });
     }
 
     if (options.pdf) {
-      const pdfDir = require('path').join(__dirname, '..', '..', 'data');
+      const pdfDir = dataDir();
       const fname = `page-${Date.now()}.pdf`;
-      const pdfPath = require('path').join(pdfDir, fname);
+      const pdfPath = options.pdfPath || require('path').join(pdfDir, fname);
+      fs.mkdirSync(require('path').dirname(pdfPath), { recursive: true });
       await page.pdf({ path: pdfPath });
       return { success: true, data: { pdfPath }, tool: 'playwright', url };
     }
@@ -176,9 +180,23 @@ async function extractSelector(url, selector, options = {}) {
 async function checkInstalled() {
   try {
     require('playwright');
-    return { installed: true, version: require('playwright/package.json').version };
-  } catch {
-    return { installed: false };
+    const executablePath = chromium.executablePath();
+    if (!fs.existsSync(executablePath)) {
+      return {
+        installed: false,
+        version: require('playwright/package.json').version,
+        executablePath,
+        install: 'npx playwright install chromium',
+        error: 'Chromium browser binary is missing.',
+      };
+    }
+    return { installed: true, version: require('playwright/package.json').version, executablePath };
+  } catch (err) {
+    return {
+      installed: false,
+      install: 'npx playwright install chromium',
+      error: err.message,
+    };
   }
 }
 

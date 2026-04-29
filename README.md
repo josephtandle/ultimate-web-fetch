@@ -21,7 +21,7 @@ Unified web fetching, scraping, screenshot, PDF, extraction, and authorized medi
 
 ## HTML Parsing
 
-**bs4 (BeautifulSoup4)** is available on python3.11 for post-fetch HTML parsing. Use it when you already have HTML and need to extract elements, links, or text — no browser needed. Installed on both python3 (3.9) and python3.11.
+**bs4 (BeautifulSoup4)** can be used with any Python 3.11+ install for post-fetch HTML parsing. Use it when you already have HTML and need to extract elements, links, or text — no browser needed.
 
 Use Scrapling when you need to fetch + parse as a unit. Use bs4 when you have raw HTML and just need to walk the DOM.
 
@@ -51,6 +51,16 @@ webfetch preflight         # Check all tools installed
 Ultimate Web Fetch installs OpenCLI as an npm dependency. A global `opencli`
 binary is not required; the CLI resolves the bundled `@jackwener/opencli`
 package first and falls back to `OPENCLI_BIN` or `opencli` when needed.
+
+Python-based optional tools are resolved from your environment instead of a
+fixed machine path. Set `WEBFETCH_PYTHON`, `SCRAPLING_PYTHON`, or
+`BROWSER_USE_PYTHON` if Python is not on your `PATH`. Set `SHOT_SCRAPER_BIN`
+or `YT_DLP_BIN` for custom CLI locations.
+
+Runtime state is written under `~/.ultimate-web-fetch` by default, not inside
+the installed package. Override with `ULTIMATE_WEB_FETCH_STATE_DIR`,
+`ULTIMATE_WEB_FETCH_CACHE_DIR`, `ULTIMATE_WEB_FETCH_DATA_DIR`,
+`ULTIMATE_WEB_FETCH_SCREENSHOT_DIR`, or `ULTIMATE_WEB_FETCH_DOWNLOAD_DIR`.
 
 ### fetch flags
 
@@ -145,7 +155,7 @@ const batch = await batchFetch([{ url: 'https://a.com', goal: '...' }]);
 - **TTL:** 30 minutes (with goal), 5 minutes (without goal)
 - **Max size:** 50MB, LRU eviction
 - **Key:** SHA-256 of `url + goal + format`
-- **Location:** `data/cache/` for page cache, `~/.ultimate-web-fetch/status.json` for CLI status
+- **Location:** `~/.ultimate-web-fetch/cache/` for page cache, `~/.ultimate-web-fetch/status.json` for CLI status
 
 ---
 
@@ -161,17 +171,26 @@ npm install
 npx playwright install chromium
 
 # Optional media downloads
+# macOS:
 brew install yt-dlp
+# Windows:
+winget install yt-dlp.yt-dlp
 
 # Optional Python tools
-python3 -m pip install scrapling curl_cffi browserforge
-python3 -m pip install browser-use
-python3 -m pip install shot-scraper && shot-scraper install
+python -m pip install scrapling curl_cffi browserforge
+python -m pip install browser-use langchain-openai
+python -m pip install shot-scraper && shot-scraper install
 
 # Verify
 npm run check
 node src/index.js preflight
 ```
+
+On macOS, `brew install python@3.11` is a good default Python setup. On
+Windows, install Python 3.11+ with `winget install Python.Python.3.11` or from
+python.org, then reopen your terminal so `python` is available on `PATH`.
+If your Windows install only exposes the Python launcher, replace `python -m`
+with `py -3 -m` in the commands above.
 
 ## Examples
 

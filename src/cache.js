@@ -3,8 +3,9 @@
 const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
+const { cacheDir } = require('./paths');
 
-const CACHE_DIR = path.join(__dirname, '..', 'data', 'cache');
+const CACHE_DIR = cacheDir();
 const MAX_CACHE_BYTES = 50 * 1024 * 1024; // 50MB
 const DEFAULT_TTL_WITH_GOAL = 30 * 60 * 1000; // 30 minutes
 const DEFAULT_TTL_WITHOUT_GOAL = 5 * 60 * 1000; // 5 minutes

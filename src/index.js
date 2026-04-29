@@ -225,10 +225,10 @@ async function main() {
         ]);
 
         const report = {
-          scrapling: { ...sc, python: sc.installed ? '/opt/homebrew/bin/python3.11' : null },
+          scrapling: { ...sc },
           playwright: { ...pw },
           opencli: { ...oc },
-          browserUse: { ...bu, python: bu.installed ? '/opt/homebrew/bin/python3.11' : null },
+          browserUse: { ...bu },
           shotScraper: { ...ss },
           ytDlp: { ...yd },
         };

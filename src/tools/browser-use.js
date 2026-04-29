@@ -1,12 +1,9 @@
 'use strict';
 
-const { execFile } = require('child_process');
-const { promisify } = require('util');
 const path = require('path');
 const { resolveBrowserRequest } = require('../browser-route');
+const { runPython } = require('./command-resolver');
 
-const execFileAsync = promisify(execFile);
-const PYTHON = '/opt/homebrew/bin/python3.11';
 const RUNNER = path.join(__dirname, '_browser_use_runner.py');
 const TIMEOUT_MS = 120000;
 
@@ -24,7 +21,7 @@ async function runBrowserUse(url, goal, options = {}) {
   const args = [RUNNER, '--url', url, '--goal', goal, '--timeout', String(Math.floor(timeout / 1000)), '--browser', browserLane];
 
   try {
-    const { stdout, stderr } = await execFileAsync(PYTHON, args, {
+    const { stdout, stderr } = await runPython('BROWSER_USE_PYTHON', args, {
       timeout: timeout + 5000, // give Python a few extra seconds beyond its internal timeout
       maxBuffer: 10 * 1024 * 1024,
     });
@@ -51,12 +48,17 @@ async function runBrowserUse(url, goal, options = {}) {
 
 async function checkInstalled() {
   try {
-    const { stdout } = await execFileAsync(PYTHON, ['-m', 'pip', 'show', 'browser-use'], { timeout: 8000 });
-    const vLine = stdout.split('\n').find(l => l.startsWith('Version:'));
-    const version = vLine ? vLine.split(': ')[1].trim() : 'unknown';
-    return { installed: true, version };
-  } catch {
-    return { installed: false };
+    const script = 'import importlib.metadata as m; import browser_use; import langchain_openai; print(m.version("browser-use"))';
+    const { stdout, python, source } = await runPython('BROWSER_USE_PYTHON', ['-c', script], { timeout: 8000 });
+    const version = stdout.trim() || 'unknown';
+    return { installed: true, version, python, source };
+  } catch (err) {
+    return {
+      installed: false,
+      python: null,
+      install: 'python -m pip install browser-use langchain-openai',
+      error: err.message,
+    };
   }
 }
 

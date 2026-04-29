@@ -4,23 +4,25 @@ const { execFile } = require('child_process');
 const { promisify } = require('util');
 const fs = require('fs');
 const path = require('path');
-const os = require('os');
+const { commandCandidates, findCommand } = require('./command-resolver');
+const { screenshotsDir } = require('../paths');
 
 const execFileAsync = promisify(execFile);
 
 // shot-scraper is a Python CLI tool by Simon Willison, built on Playwright.
 // It provides CSS selector targeting, JS injection, retina output, and YAML batch.
 // Install: pip install shot-scraper && shot-scraper install
-const SHOT_SCRAPER_BIN = process.env.SHOT_SCRAPER_BIN
-  || '/opt/homebrew/bin/shot-scraper'
-  || path.join(os.homedir(), 'Library', 'Python', '3.9', 'bin', 'shot-scraper');
+function shotScraperCandidates() {
+  return commandCandidates('SHOT_SCRAPER_BIN', ['shot-scraper']);
+}
 
-const DEFAULT_OUTPUT_DIR = path.join(process.cwd(), 'data', 'screenshots');
+const DEFAULT_OUTPUT_DIR = screenshotsDir();
 
 async function runShotScraper(args, options = {}) {
   const timeout = options.timeout || 60000;
   try {
-    const { stdout, stderr } = await execFileAsync(SHOT_SCRAPER_BIN, args, { timeout });
+    const resolved = await findCommand(shotScraperCandidates(), ['--version'], { timeout: 5000 });
+    const { stdout, stderr } = await execFileAsync(resolved.command, [...resolved.prefixArgs, ...args], { timeout });
     return { success: true, stdout: stdout.trim(), stderr: stderr.trim() };
   } catch (err) {
     return { success: false, error: err.message, stderr: err.stderr || '' };
@@ -131,11 +133,17 @@ async function screenshotSections(url, sections, outputDir, options = {}) {
 
 async function checkInstalled() {
   try {
-    const { stdout } = await execFileAsync(SHOT_SCRAPER_BIN, ['--version'], { timeout: 5000 });
-    return { installed: true, version: stdout.trim() };
-  } catch {
-    return { installed: false, version: null };
+    const { stdout, command, source } = await findCommand(shotScraperCandidates(), ['--version'], { timeout: 5000 });
+    return { installed: true, version: stdout.trim(), bin: command, source };
+  } catch (err) {
+    return {
+      installed: false,
+      version: null,
+      bin: process.env.SHOT_SCRAPER_BIN || 'shot-scraper',
+      install: 'python -m pip install shot-scraper && shot-scraper install',
+      error: err.message,
+    };
   }
 }
 
-module.exports = { screenshot, screenshotBatch, screenshotSections, checkInstalled, SHOT_SCRAPER_BIN };
+module.exports = { screenshot, screenshotBatch, screenshotSections, checkInstalled };

@@ -5,17 +5,22 @@ const { promisify } = require('util');
 const fs = require('fs');
 const path = require('path');
 const os = require('os');
+const { commandCandidates, findCommand } = require('./command-resolver');
+const { downloadsDir } = require('../paths');
 
 const execFileAsync = promisify(execFile);
 
-const YT_DLP_BIN = process.env.YT_DLP_BIN || 'yt-dlp';
-
-const DEFAULT_OUTPUT_DIR = path.join(os.homedir(), 'Downloads', 'webfetch-media');
+const DEFAULT_OUTPUT_DIR = downloadsDir();
 const DEFAULT_TIMEOUT_MS = 10 * 60 * 1000;
+
+function ytDlpCandidates() {
+  return commandCandidates('YT_DLP_BIN', ['yt-dlp', 'yt-dlp.exe']);
+}
 
 async function runYtDlp(args, options = {}) {
   try {
-    const { stdout, stderr } = await execFileAsync(YT_DLP_BIN, args, {
+    const resolved = await findCommand(ytDlpCandidates(), ['--version'], { timeout: 5000 });
+    const { stdout, stderr } = await execFileAsync(resolved.command, [...resolved.prefixArgs, ...args], {
       timeout: options.timeout || DEFAULT_TIMEOUT_MS,
       maxBuffer: 20 * 1024 * 1024,
     });
@@ -95,11 +100,17 @@ async function downloadMedia(url, options = {}) {
 
 async function checkInstalled() {
   try {
-    const { stdout } = await execFileAsync(YT_DLP_BIN, ['--version'], { timeout: 5000 });
-    return { installed: true, version: stdout.trim(), bin: YT_DLP_BIN };
-  } catch {
-    return { installed: false, version: null, bin: YT_DLP_BIN };
+    const { stdout, command, source } = await findCommand(ytDlpCandidates(), ['--version'], { timeout: 5000 });
+    return { installed: true, version: stdout.trim(), bin: command, source };
+  } catch (err) {
+    return {
+      installed: false,
+      version: null,
+      bin: process.env.YT_DLP_BIN || 'yt-dlp',
+      install: 'python -m pip install yt-dlp',
+      error: err.message,
+    };
   }
 }
 
-module.exports = { downloadMedia, checkInstalled, YT_DLP_BIN, DEFAULT_OUTPUT_DIR };
+module.exports = { downloadMedia, checkInstalled, DEFAULT_OUTPUT_DIR };

@@ -2,9 +2,9 @@
 
 const fs = require('fs');
 const path = require('path');
-const os = require('os');
+const { stateDir } = require('./paths');
 
-const STATUS_DIR = process.env.ULTIMATE_WEB_FETCH_STATE_DIR || path.join(os.homedir(), '.ultimate-web-fetch');
+const STATUS_DIR = stateDir();
 const STATUS_PATH = path.join(STATUS_DIR, 'status.json');
 
 function writeStatus(status, lastResult, lastMessage, errorCount = 0) {

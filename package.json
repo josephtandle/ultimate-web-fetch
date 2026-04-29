@@ -11,7 +11,7 @@
     "start": "node src/index.js",
     "preflight": "node src/index.js preflight",
     "status": "node src/index.js status",
-    "check": "node --check src/index.js && node --check src/api.js && find src/tools -name '*.js' -print0 | xargs -0 -n1 node --check"
+    "check": "node src/check.js"
   },
   "files": [
     "README.md",
