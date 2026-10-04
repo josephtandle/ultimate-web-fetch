@@ -52,13 +52,13 @@ async function runScrapling(url, goal, options = {}) {
 
 async function checkInstalled() {
   try {
-    const { stdout, python, source } = await runPython('SCRAPLING_PYTHON', ['-c', 'import scrapling; print(scrapling.__version__)'], { timeout: 5000 });
+    const { stdout, python, source } = await runPython('SCRAPLING_PYTHON', ['-c', 'import scrapling; import curl_cffi; from scrapling import Fetcher; Fetcher(auto_match=False); print(scrapling.__version__)'], { timeout: 5000 });
     return { installed: true, version: stdout.trim(), python, source };
   } catch (err) {
     return {
       installed: false,
       python: null,
-      install: 'python -m pip install scrapling',
+      install: 'python -m pip install "scrapling[fetchers]"',
       error: err.message,
     };
   }

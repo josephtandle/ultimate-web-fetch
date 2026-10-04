@@ -48,6 +48,8 @@ webfetch preflight         # Check all tools installed
 
 ## Installation Notes
 
+Use Node 22.19 or newer. Node 24 is a good choice for new installs.
+
 Ultimate Web Fetch installs OpenCLI as an npm dependency. A global `opencli`
 binary is not required; the CLI resolves the bundled `@jackwener/opencli`
 package first and falls back to `OPENCLI_BIN` or `opencli` when needed.
@@ -56,6 +58,10 @@ Python-based optional tools are resolved from your environment instead of a
 fixed machine path. Set `WEBFETCH_PYTHON`, `SCRAPLING_PYTHON`, or
 `BROWSER_USE_PYTHON` if Python is not on your `PATH`. Set `SHOT_SCRAPER_BIN`
 or `YT_DLP_BIN` for custom CLI locations.
+
+Install `scrapling[fetchers]` for page fetching. The plain `scrapling` package
+only provides parsing. `webfetch preflight` exits with an error when Scrapling
+or Playwright Chromium is unavailable; optional tools are listed separately.
 
 Runtime state is written under `~/.ultimate-web-fetch` by default, not inside
 the installed package. Override with `ULTIMATE_WEB_FETCH_STATE_DIR`,
@@ -180,7 +186,7 @@ brew install yt-dlp
 winget install yt-dlp.yt-dlp
 
 # Optional Python tools
-python -m pip install scrapling curl_cffi browserforge
+python -m pip install "scrapling[fetchers]"
 python -m pip install browser-use langchain-openai
 python -m pip install shot-scraper && shot-scraper install
 

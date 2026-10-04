@@ -245,7 +245,8 @@ async function main() {
         const allOk = sc.installed && pw.installed;
         const status = allOk ? 'All core tools ready.' : 'Some tools not installed — see report above.';
         out(status);
-        writeStatus('idle', 'success', `Preflight: scrapling=${sc.installed} playwright=${pw.installed} opencli=${oc.installed} browser-use=${bu.installed} shot-scraper=${ss.installed} yt-dlp=${yd.installed}`);
+        writeStatus('idle', allOk ? 'success' : 'error', `Preflight: scrapling=${sc.installed} playwright=${pw.installed} opencli=${oc.installed} browser-use=${bu.installed} shot-scraper=${ss.installed} yt-dlp=${yd.installed}`, allOk ? 0 : 1);
+        if (!allOk) process.exitCode = 1;
         break;
       }
 
