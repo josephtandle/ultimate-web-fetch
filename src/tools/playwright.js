@@ -48,6 +48,11 @@ async function resolvePlaywrightLane(url, goal, options = {}) {
   return request;
 }
 
+function canUseEphemeralHeadless(laneRequest, options = {}) {
+  if (laneRequest.lane === 'headless') return true;
+  return laneRequest.lane === 'agent' && !options.browser && (options.screenshot === true || options.pdf === true);
+}
+
 async function runPlaywright(url, goal, options = {}) {
   const timeout = options.timeout || TIMEOUT_MS;
   const laneRequest = await resolvePlaywrightLane(url, goal, { ...options, allowEphemeralHeadless: true });
@@ -55,7 +60,6 @@ async function runPlaywright(url, goal, options = {}) {
   let browser = null;
   let context = null;
   let page = null;
-  let launchedOwn = false;
 
   try {
     // Try CDP connection
@@ -64,13 +68,12 @@ async function runPlaywright(url, goal, options = {}) {
       browser = cdpResult.browser;
       context = await browser.newContext();
     } else {
-      if (laneRequest.lane !== 'headless') {
+      if (!canUseEphemeralHeadless(laneRequest, options)) {
         throw new Error(`CDP unavailable for ${laneRequest.lane} lane on ${laneRequest.port}`);
       }
-      console.error(`[webfetch/playwright] headless CDP unavailable on ${laneRequest.port}, launching ephemeral headless Chromium`);
+      console.error(`[webfetch/playwright] CDP unavailable on ${laneRequest.port}, launching ephemeral headless Chromium for this capture`);
       browser = await chromium.launch({ headless: true }); // browser-route: allow ephemeral headless
       context = await browser.newContext({ userAgent: 'Ultimate-Web-Fetch/1.0 (+https://github.com/josephtandle/ultimate-web-fetch)' });
-      launchedOwn = true;
     }
 
     page = await context.newPage();
@@ -122,8 +125,8 @@ async function runPlaywright(url, goal, options = {}) {
     // Always clean up context — never leak
     if (page) await page.close().catch(() => {});
     if (context) await context.close().catch(() => {});
-    if (launchedOwn && browser) await browser.close().catch(() => {});
-    // For CDP connections, do NOT close the browser (it would kill the shared Chrome instance)
+    // For CDP connections Playwright closes this connection, not the shared browser server.
+    if (browser) await browser.close().catch(() => {});
   }
 }
 
@@ -138,7 +141,7 @@ async function savePdf(url, options = {}) {
 
 async function extractSelector(url, selector, options = {}) {
   const timeout = options.timeout || TIMEOUT_MS;
-  let browser = null, context = null, page = null, launchedOwn = false;
+  let browser = null, context = null, page = null;
   try {
     const laneRequest = await resolvePlaywrightLane(url, null, {
       ...options,
@@ -155,7 +158,6 @@ async function extractSelector(url, selector, options = {}) {
       }
       browser = await chromium.launch({ headless: true }); // browser-route: allow ephemeral headless
       context = await browser.newContext();
-      launchedOwn = true;
     }
     page = await context.newPage();
     await page.goto(url, { waitUntil: 'domcontentloaded', timeout });
@@ -173,7 +175,7 @@ async function extractSelector(url, selector, options = {}) {
   } finally {
     if (page) await page.close().catch(() => {});
     if (context) await context.close().catch(() => {});
-    if (launchedOwn && browser) await browser.close().catch(() => {});
+    if (browser) await browser.close().catch(() => {});
   }
 }
 
@@ -200,4 +202,4 @@ async function checkInstalled() {
   }
 }
 
-module.exports = { runPlaywright, takeScreenshot, savePdf, extractSelector, checkInstalled, needsAgentLane };
+module.exports = { runPlaywright, takeScreenshot, savePdf, extractSelector, checkInstalled, needsAgentLane, canUseEphemeralHeadless };
