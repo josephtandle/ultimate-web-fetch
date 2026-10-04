@@ -79,6 +79,7 @@ async function main() {
           writeStatus('idle', 'success', `Fetched ${url} via ${result.tool}${result.cached ? ' (cached)' : ''}`);
         } else {
           writeStatus('error', 'error', result.error, 1);
+          process.exitCode = 1;
         }
         break;
       }
@@ -100,6 +101,7 @@ async function main() {
         });
         out(result);
         writeStatus('idle', result.success ? 'success' : 'error', result.success ? `Screenshot saved: ${result.path}` : result.error, result.success ? 0 : 1);
+        if (!result.success) process.exitCode = 1;
         break;
       }
 
@@ -110,6 +112,7 @@ async function main() {
         const result = await screenshotBatch(shotsFile, { outputDir: f['output-dir'] || null });
         out(result);
         writeStatus('idle', result.success ? 'success' : 'error', result.success ? `Batch complete: ${result.outputDir}` : result.error, result.success ? 0 : 1);
+        if (!result.success) process.exitCode = 1;
         break;
       }
 
@@ -135,6 +138,7 @@ async function main() {
         const result = await pdf(url, { browser: f.browser || null, output: f.output || null });
         out(result);
         writeStatus('idle', result.success ? 'success' : 'error', result.success ? `PDF saved` : result.error, result.success ? 0 : 1);
+        if (!result.success) process.exitCode = 1;
         break;
       }
 
@@ -153,6 +157,7 @@ async function main() {
         });
         out(result);
         writeStatus('idle', result.success ? 'success' : 'error', result.success ? `Media saved: ${result.path || result.files?.length || 0}` : result.error, result.success ? 0 : 1);
+        if (!result.success) process.exitCode = 1;
         break;
       }
 
@@ -164,6 +169,7 @@ async function main() {
         const result = await extractSelector(url, selector, { all: Boolean(f.all), attr: f.attr || null, browser: f.browser || null });
         out(result);
         writeStatus('idle', result.success ? 'success' : 'error', result.success ? `Extracted ${selector}` : result.error, result.success ? 0 : 1);
+        if (!result.success) process.exitCode = 1;
         break;
       }
 
@@ -174,7 +180,8 @@ async function main() {
         writeStatus('working', 'skipped', `Batch fetching ${manifest.length} URLs`);
         const result = await batchFetch(manifest, { format: f.format || 'markdown', browser: f.browser || null });
         out(result);
-        writeStatus('idle', 'success', `Batch: ${result.succeeded}/${manifest.length} succeeded`);
+        writeStatus('idle', result.failed ? 'error' : 'success', `Batch: ${result.succeeded}/${manifest.length} succeeded`, result.failed ? 1 : 0);
+        if (result.failed) process.exitCode = 1;
         break;
       }
 

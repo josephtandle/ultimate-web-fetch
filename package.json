@@ -1,6 +1,6 @@
 {
   "name": "ultimate-web-fetch",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Unified web fetching, scraping, screenshot, PDF, extraction, and authorized media download CLI.",
   "main": "src/index.js",
   "bin": {
@@ -11,7 +11,8 @@
     "start": "node src/index.js",
     "preflight": "node src/index.js preflight",
     "status": "node src/index.js status",
-    "check": "node src/check.js"
+    "check": "node src/check.js",
+    "test": "node --test src/tests/*.test.js"
   },
   "files": [
     "README.md",
