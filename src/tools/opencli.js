@@ -17,11 +17,8 @@ function getOpenCLICommand() {
   if (process.env.OPENCLI_BIN) return { command: process.env.OPENCLI_BIN, prefixArgs: [] };
 
   try {
-    const packagePath = require.resolve('@jackwener/opencli/package.json');
-    const packageDir = path.dirname(packagePath);
-    const { bin } = require(packagePath);
-    const binPath = path.join(packageDir, typeof bin === 'string' ? bin : bin.opencli);
-    return { command: process.execPath, prefixArgs: [binPath] };
+    // The package exports its CLI entry point but does not export package.json.
+    return { command: process.execPath, prefixArgs: [require.resolve('@jackwener/opencli')] };
   } catch {
     return { command: 'opencli', prefixArgs: [] };
   }
@@ -129,4 +126,4 @@ async function checkInstalled() {
   }
 }
 
-module.exports = { runOpenCLI, listAdapters, checkInstalled, getAdapterForDomain };
+module.exports = { runOpenCLI, listAdapters, checkInstalled, getAdapterForDomain, getOpenCLICommand };
