@@ -27,6 +27,10 @@ function intentToLane(intent) {
 }
 
 function resolveBrowserRequest({ intent = 'anonymous_scrape', browser = null, url = '', caller = 'ultimate-web-fetch', reason = '' } = {}) {
+  if (browser && !LANES[browser]) throw new Error(`Unknown browser lane '${browser}'. Choose headless, agent, or personal.`);
+  if (intentToLane(intent).lane === 'personal' && browser !== 'personal') {
+    throw new Error('This task needs a personal browser. Pass --browser personal only after authorizing that session.');
+  }
   const selected = browser && LANES[browser] ? LANES[browser] : intentToLane(intent);
   return {
     ...selected,

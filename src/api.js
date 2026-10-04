@@ -58,6 +58,16 @@ async function fetchUrl(url, options = {}) {
     dryRun = false,
   } = options;
 
+  assertWebUrl(url);
+
+  // A dry run explains the route without fetching robots.txt, sleeping, or reading cache.
+  if (dryRun) {
+    const installed = await getInstalled();
+    const tool = selectTool(url, goal, { installed, forcedTool });
+    const { explainChoice } = require('./router');
+    return { dryRun: true, tool, reason: explainChoice(url, goal, { installed, forcedTool }), installed };
+  }
+
   // Politeness check
   if (!ignoreRobots) {
     const { allowed, domain } = await politeness.check(url, { ignoreRobots });
@@ -67,7 +77,7 @@ async function fetchUrl(url, options = {}) {
   }
 
   // Cache check
-  if (!noCache) {
+  if (!noCache && !forcedTool) {
     const cached = cache.get(url, goal, fmt);
     if (cached) {
       return { success: true, data: cached.data, tool: cached.tool, url, cached: true, format: fmt };
@@ -75,12 +85,7 @@ async function fetchUrl(url, options = {}) {
   }
 
   const installed = await getInstalled();
-  const tool = forcedTool || selectTool(url, goal, { installed });
-
-  if (dryRun) {
-    const { explainChoice } = require('./router');
-    return { dryRun: true, tool, reason: explainChoice(url, goal, { installed, forcedTool }), installed };
-  }
+  const tool = selectTool(url, goal, { installed, forcedTool });
 
   // Apply polite delay
   await politeness.applyDelay(url, delayMs);
@@ -89,7 +94,7 @@ async function fetchUrl(url, options = {}) {
   let result = await runTool(tool, url, goal, toolOptions);
 
   // Fallback to playwright if primary failed
-  if (!result.success && tool !== 'playwright') {
+  if (!result.success && !forcedTool && tool !== 'playwright' && installed.playwright) {
     console.error(`[webfetch] ${tool} failed (${result.error}), falling back to playwright`);
     result = await runPlaywright(url, goal, toolOptions);
   }
@@ -129,6 +134,7 @@ async function fetchUrl(url, options = {}) {
 }
 
 async function screenshot(url, options = {}) {
+  assertWebUrl(url);
   const {
     browser = null,
     fullPage = false,
@@ -159,16 +165,19 @@ async function screenshotSections(url, sections, outputDir, options = {}) {
 }
 
 async function pdf(url, options = {}) {
+  assertWebUrl(url);
   const { browser = null, output = null } = options;
   const result = await savePdf(url, { browser, pdfPath: output });
   return result;
 }
 
 async function downloadMedia(url, options = {}) {
+  assertWebUrl(url);
   return ytDlp.downloadMedia(url, options);
 }
 
 async function extractSelector(url, selector, options = {}) {
+  assertWebUrl(url);
   return playwrightExtract(url, selector, options);
 }
 
@@ -180,6 +189,15 @@ async function batchFetch(manifest, options = {}) {
   }
   const succeeded = results.filter(r => r.success).length;
   return { results, succeeded, failed: results.length - succeeded };
+}
+
+function assertWebUrl(url) {
+  let parsed;
+  try { parsed = new URL(url); }
+  catch { throw new Error(`Invalid web URL: ${url}`); }
+  if (!['http:', 'https:'].includes(parsed.protocol)) {
+    throw new Error(`Unsupported URL scheme '${parsed.protocol}'; use http or https.`);
+  }
 }
 
 module.exports = { fetchUrl, screenshot, screenshotBatch, screenshotSections, pdf, downloadMedia, extractSelector, batchFetch, getInstalled };

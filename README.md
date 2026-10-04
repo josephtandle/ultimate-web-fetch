@@ -67,8 +67,8 @@ the installed package. Override with `ULTIMATE_WEB_FETCH_STATE_DIR`,
 | Flag | Default | Description |
 |------|---------|-------------|
 | `--goal "..."` | none | Extraction goal — triggers LLM extraction after fetch |
-| `--tool <name>` | auto | Force a specific tool |
-| `--dry-run` | false | Show which tool would be used, without fetching |
+| `--tool <name>` | auto | Use only the named installed tool. Failure is reported without changing tools. |
+| `--dry-run` | false | Show the route without contacting the site, checking robots.txt, or reading cache. |
 | `--format markdown\|json\|text\|html` | markdown | Output format |
 | `--browser agent\|headless` | intent-derived | Browser lane override; must match the router-selected intent |
 | `--no-cache` | false | Skip cache read and write |
@@ -117,9 +117,11 @@ the installed package. Override with `ULTIMATE_WEB_FETCH_STATE_DIR`,
 | Pure scraping, anonymous | `anonymous_scrape` -> Headless Browser (9222) | <!-- browser-route: allow -->
 | Screenshots, PDFs, QA | `agent_qa` -> Agent Browser (9223) | <!-- browser-route: allow -->
 | Autonomous browsing | `agent_research` -> Agent Browser (9223) | <!-- browser-route: allow -->
-| Joe-facing auth/open-as-user | Use `browser-route` with `joe_open` or `auth_user_visible`; WebFetch must not use personal by default |
+| Authenticated work | Requires an explicit `--browser personal` choice; WebFetch will not select a personal session from goal text alone. |
 
 The standalone package includes a conservative browser-lane resolver. If you do not run persistent Chrome debugging ports, Playwright can fall back to an ephemeral headless Chromium for anonymous/headless tasks.
+
+WebFetch accepts HTTP and HTTPS URLs. A failed fetch or a batch with failed items exits with a nonzero status so scripts and installers can detect errors.
 
 ---
 

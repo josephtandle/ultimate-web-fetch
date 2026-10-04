@@ -83,7 +83,9 @@ function isAutonomous(goal) {
 function selectTool(url, goal, { installed = {}, forcedTool } = {}) {
   // 1. Forced tool
   if (forcedTool) {
-    if (!installed[forcedTool] && forcedTool !== 'playwright') {
+    const installedKey = { scrapling: 'scrapling', playwright: 'playwright', opencli: 'opencli', 'browser-use': 'browserUse' }[forcedTool];
+    if (!installedKey) throw new Error(`Unknown tool '${forcedTool}'. Choose playwright, scrapling, opencli, or browser-use.`);
+    if (!installed[installedKey]) {
       throw new Error(`Tool '${forcedTool}' is not installed. Run: node src/index.js preflight`);
     }
     return forcedTool;
@@ -111,7 +113,8 @@ function selectTool(url, goal, { installed = {}, forcedTool } = {}) {
   }
 
   // 5. Default
-  return 'playwright';
+  if (installed.playwright) return 'playwright';
+  throw new Error('No usable fetch tool is installed. Run: node src/index.js preflight');
 }
 
 function explainChoice(url, goal, { installed = {}, forcedTool } = {}) {
