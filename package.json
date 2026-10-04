@@ -1,6 +1,6 @@
 {
   "name": "ultimate-web-fetch",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Unified web fetching, scraping, screenshot, PDF, extraction, and authorized media download CLI.",
   "main": "src/index.js",
   "bin": {

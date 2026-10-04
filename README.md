@@ -120,6 +120,7 @@ the installed package. Override with `ULTIMATE_WEB_FETCH_STATE_DIR`,
 | Authenticated work | Requires an explicit `--browser personal` choice; WebFetch will not select a personal session from goal text alone. |
 
 The standalone package includes a conservative browser-lane resolver. If you do not run persistent Chrome debugging ports, Playwright can fall back to an ephemeral headless Chromium for anonymous/headless tasks.
+For screenshots and PDFs with no `--browser` choice, it can also use ephemeral headless Chromium when the agent browser is unavailable. An explicit `--browser agent` stays on that lane and reports a connection error if it is down.
 
 WebFetch accepts HTTP and HTTPS URLs. A failed fetch or a batch with failed items exits with a nonzero status so scripts and installers can detect errors.
 
